@@ -1,0 +1,687 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <!--logo ne tab -->
+<link rel="icon" sizes="192x192" href="Foto/01.png">
+ <title>IMPULSE</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="jquery-1.11.2.min.js"></script>
+<script>
+$(document).ready(function(){
+       $("#removej").hover(function(){
+	      $("#removej").remove();
+	   });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $(".clicktips").click(function(){
+        $(".tipsid").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $(".clicktips1").click(function(){
+        $(".tipsid1").slideToggle("slow");
+    });
+});
+</script> 
+<style>
+/*------------------------------------------*/
+header {
+    background-color: RGB(0,0,0);
+    background-attachment: fixed;
+    min-width:84em;
+    min-height: 10em;
+
+}
+#imgheader{
+  height:30%;
+  width:30%;
+  text-align:center;
+
+}
+ 
+/*Pjesa e logos se faqes per pjesen lart*/
+img {
+    height: 120px;
+    width: 100px;
+    max-width: 100%;
+    image-orientation: inherit;
+}
+ /*Ju jep keto karakteristika te gjitha elementeve*/
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+/*--------------------------------------------*/
+/*CSS per pjesen e menu-se*/
+nav {min-width:84em;
+    margin: 0 0 0 0;
+    font-family: Arial;
+    font-size: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    min-height:2.25em;
+     
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #232323;
+        text-align: center;
+        vertical-align: top;
+        min-height:2.25em;
+    }
+
+#nav li {
+    display: inline-block;
+    border-right: 2px solid;
+    border-right-color: #3CC47C;
+}
+
+#nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    text-decoration: none;
+      margin-left:-0.3em;
+}
+
+
+#nav li a[href="camp.html"]{
+
+  background-color: #A0522D;
+}
+#nav li a:hover[href="hike.html"]{
+opacity:0.9;
+  background-color:#86B404;
+  margin-left:0;
+}
+#nav li a[href="hike.html"]{
+  margin-left:0;
+}
+#nav li a:hover[href="cycle.html"]{
+opacity:0.9;
+  background-color: #088A4B;
+}
+#nav li a:hover[href="Experience.html"]{
+opacity:0.9;
+  background-color:  #2E9AFE;
+}
+#nav li a:hover[href="surf.html"]{
+opacity:0.9;
+  background-color:#04B4AE;
+}
+#nav li a:hover[href="scuba.html"]{
+opacity:0.9;
+  background-color:#2ECCFA;
+}
+
+
+form {
+    overflow: auto;
+    padding: 0;
+}
+/*Vija ne anen e majte te femijes se pare*/
+#nav li:first-child {
+    border-left: 2px solid;
+    border-left-color: #3CC47C;
+}
+    /*Vija ne elementin e fundit te listes te mos shfaqet*/
+#nav li:last-child {
+    border-right: none;
+}
+
+
+   /*---------------------------------------------------------------------------------*/
+	 /*---------------------------------------------------------------------------------*/
+	  /*elementet paraqiten horizontalisht */
+      .main-banner {
+        display: flex;
+    }
+	  /*Fotoja*/
+	.main-banner {
+        background: url("Foto/camping_1.jpg") ;
+        background-size: 100% 100%;
+        min-height:100%;
+        height:100%;
+        display: flex;
+        background-repeat: no-repeat;
+		z-index:2;
+        min-width:100%;
+    }
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Vendosja e lartesise, gjatesise, pozicionimi, ngjyra e fontit, largesia nga top dhe z-index(pozicionimi ne raport me div elementet tjera)  */
+footer
+{
+background-color: rgb(35,35,35);
+position:relative;
+width:100%;
+color:white;
+z-index:-1;
+min-width:84em;
+float:left;
+
+}
+
+#imglogo1
+{
+height:100%;
+width:100%;
+}
+
+
+/*Div elementi qe duket si vije vertikale per ndarje te te dhenave(footer)*/
+.vertical
+{
+height:10em;
+
+margin-top:4.5%;
+border-left:3px solid lightblue;
+float:left;
+margin-left:6%;
+}
+
+/*Div element ne te cilin eshte vendosur llogo(footer)*/
+#logo1
+{
+float:left;
+margin-left: 5%;
+margin-top: 6.9%;
+width:20%;
+}
+ #tabela {margin-left:1%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 85%;
+}
+
+#tabela td, #tabela th {
+    border: 1px solid #A0522D;
+    text-align: left;
+    padding: 8px;
+}
+footer .tabela123{
+    font-size:100%;
+   width:100%;
+}
+/*Tabela(footer)*/
+footer .tabela12, footer .tabela123
+{
+margin-left:3%;
+margin-top:0%;
+padding:25px;
+color:black;
+padding-top:3%;
+text-decoration:underline;
+border:none;
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  height:25px;
+  width:25px;
+  cursor: pointer;
+  background: URL('Foto/TopPage.png') no-repeat;
+  background-size: 25px,25px;
+  bottom: 5%;
+  right: 2%;
+  transform: scale(2,2);
+}
+#myBtn:hover{
+  opacity:0.8;
+}
+
+/*Div element per homeButton*/
+#homeButton
+{
+position: fixed;
+  bottom: 3%;
+  left: 1%;
+}
+#homeButton:hover{
+  opacity:0.8;
+}.hik{
+    background:url('Foto/camping_1.jpg');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    width:100%;
+    height:100%;
+}
+.hik1{
+      background:url('Foto/camping_2.jpg');
+      background-repeat:no-repeat;
+      background-size:100% 100%;
+      width:100%;
+      height:100%;
+  }
+  
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+min-height: 160px;
+max-width:  160% ;
+max-height:130%;
+margin-left:50%;
+margin-top:-100%;
+float:left;
+padding:5%;
+cursor:pointer;
+ background-image:URL('Foto/camping_1.jpg');
+ background-size:100% 100%;
+}
+
+.dropdown-content1 {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+max-width:  160% ;
+max-height:130%;
+min-width: 160px;
+min-height: 160px;
+margin-left:50%;
+margin-top:-100%;
+float:left;
+padding:5%;
+cursor:pointer;
+ background-image:URL('Foto/camping_2.jpg');
+ background-size:100% 100%;
+}
+
+.dropdown {
+width:25%;
+position: relative;
+display: block;
+}
+.drop {
+    padding:3%;
+    margin-left:0;
+    margin-top:0%;
+    cursor: pointer;
+    height:100%;
+    width:100%;
+
+}
+.dropdown:hover .dropdown-content {
+display: block;
+height:150%;
+width:360%;
+margin-left:-33%;
+}
+.dropdown:hover .dropdown-content1 {
+display: block;
+height:150%;
+width:360%;
+margin-left:-33%;
+}
+*{
+font-family:'Trebuchet ms'
+}
+nav ul li form input[type = text]{
+
+  padding-left: 0;
+  opacity: 0.8;
+}
+nav ul li form input[type = text]:focus{
+
+  padding-left: 0;
+  opacity: 1;
+}
+.tipsid, .clicktips {
+    background-color: #A0522D;
+    border: none;
+    height:10%;
+    width:95%;
+    margin-left:2%;
+	
+}
+
+
+.tipsid {
+    margin-left:2%;
+    background-color:rgb(153, 100, 75);
+    display: none;
+    border-radius:1%;
+    width:95%;
+	margin-top:-3.8%;
+}
+.tipsid1, .clicktips1 {
+    background-color: #A0522D;
+    border: none;
+    height:10%;
+    width:95%;
+    margin-left:2%;
+	
+}
+
+
+.tipsid1 {
+    margin-left:2%;
+    display: none;
+    border-radius:1%;
+    width:95%;
+	margin-top:-3.8%;
+}
+#test div
+{
+	position:relative;
+	width:400px;
+	height:350px;
+	text-align:center;
+	transform:translateX(100%);
+	animation: test 10s ease-out infinite;
+	float:left;
+	margin-left:-30%;
+
+}
+
+@keyframes test
+{
+0%   {background-image:url("keyframe/v7.jfif");left:0px;top:0px;}
+20%  {background-image:url("keyframe/v11.jpg");left:0px;top:0px;}
+40%  {background-image:url("keyframe/v10.jpg");left:0px;top:0px;}
+60%  {background-image:url("keyframe/v9.jpg");left:0px;top:0px;}
+80%  {background-image:url("keyframe/v8.jpg");left:40px;top:40px;}
+100% {background-image:url("keyframe/v12.jpg");left:0px;top:0px;}
+}
+#test div:hover{
+		-webkit-animation-play-state: paused;
+		animation-play-state: paused;
+		border-radius: 10%;
+}
+
+
+
+</style>
+<script>
+// Kur scroll posht 135 px vendose butonin TOP
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 135 || document.documentElement.scrollTop > 135) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// Kur klikon butonin dergo ne top
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</head>
+
+
+<body style="background-color:#ececec;">
+ <header>
+   
+   <img src="Foto/ImpulseCamping.png" id="imgheader" alt="Impulse" style="margin-top:1.5%;margin-bottom:1.5%;margin-left:34.9%" />
+
+ </header>
+ <nav>
+        <ul id="nav">
+
+            <li><a href="hike.html">Hiking</a></li>
+            <li><a href="surf.html">Surfing</a></li>
+            <li><a href="scuba.html">Scuba Diving</a></li>
+            <li><a href="camp.html">Camping</a></li>
+            <li><a href="cycle.html">Cycling</a></li>
+            <li><a href="Experience.html" id="exp">Experiences</a></li> 
+             
+
+            <li>
+
+              <li style="vertical-align:middle;">
+
+                              <form action="https://www.google.com" method="GET" target="_blank" style=" border-radius:2px;background-color:#314a37;padding:4px; ">
+                                  <input type="text" placeholder="Search Location" name="q" style=" line-height: 22px;border:none;  cursor: pointer;border-radius:2px;font-family:sans-serif;font-style: normal;">
+                                  <input type="submit" value="Submit"; style=" box-shadow:1px 1px 0 #677B66;border:none; background: #C1DEC0;line-height:22px;  cursor: pointer;border-radius:2px;font-family:sans-serif;font-style: normal;">
+                              </form>
+              </li>
+        </ul>
+    </nav>
+
+	
+	
+    
+
+   
+    
+        <div style="background-color:#ececec; width:100%;min-width:84em; float:left;">
+       <div style="margin-left:10.5%; width:58%;min-width:48.8em; float:left;border:0.1px solid black; ">
+        
+  <table cellpadding="23" id='tabela'>
+  <tr style="background-color: #A0522D;border: 1px solid #A0522D;">
+    <th>Form of camping</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Adventure camping</td>
+    <td>is a form of camping by people who race (possibly adventure
+racing or mountain biking) during the day, and camp in a
+minimalist way at night. They might use the basic items
+of camping equipment such as a micro-camping stove,
+sleeping bag, and bivouac shelter.</td>
+  </tr>
+  <tr>
+    <td>Dry camping</td>
+    <td>is camping at a site without a reliable preexisting water
+source; such locations are known as dry camps. Campers must carry
+their own water in and out of camp, which requires much more
+preparation than would otherwise be required. Dry camping is very
+common in deserts, and is often preferred due to the risk of flash
+floods</td>
+  </tr>
+  <tr>
+    <td>Canoe Camping</td>
+    <td>is similar to backpacking, and often affords much more weight
+and bulk to be carried when extended portaging is not involved.
+Electric motors or small gas ones may be attached on some canoes,
+where allowed, for a faster journey on the water. Waterproof bags
+and fishing gear are common gear</td>
+  </tr>
+  <tr>
+    <td>Social camping</td>
+    <td>Many campers enjoy socializing with small groups of fellow
+campers. Such groups will arrange events throughout the year to allow
+members with similar interests or from similar geographical areas in
+order to collaborate. This allows families to form small close-knit
+societies, and children to form lasting friendships.</td>
+  </tr>
+  <tr>
+    <td>Survivalist camping</td>
+    <td>Survivalist campers learn the skills needed to survive in any
+outdoor situation. This activity may require skills in obtaining food
+from the wild, emergency medical treatments, orienteering, and
+pioneering.</td>
+  </tr>
+</table>
+
+ <p id="removej"> The outside is the only place we can be inside the world <cite> THIS SIDE OF A WILDERNESS </cite><span id="citeid"></span><br>
+ <span id="dateid"></span>
+ 
+ <script>
+function Person(first, last) {
+    this.firstName = first;
+    this.lastName = last;
+}
+Person.prototype.middleName = "James";
+
+var famous = new Person("Daniel", "Rice");
+document.getElementById("citeid").innerHTML =
+"-Daniel "+ famous.middleName+" Rice"; 
+</script>
+</p>
+        <br />
+        
+<pre class="clicktips"  style="border-radius:5px;height:50px;text-align:center;cursor:pointer;">
+   
+   10 CAMPING Tips </pre>
+   <pre class="tipsid" >
+  
+  
+   1. If you have bad knees, GIVE WALKING POLES A TRY.
+   
+   2. Research your campsite. Check what facilities are available.
+   
+   3. Read up on potential dangers.  
+   
+   4. Check the weather – and any fire bans. It’s best to pack for changing weather conditions.
+   
+   5. Take nylon rope and duct tape.
+   
+   6. Purchase good-quality camping equipment. 
+   
+   7. Be prepared for the worst. Camping essentials also include preparing for emergencies. 
+   
+   8. Start early. Always pitch you tent and set up camp before night fall..
+   
+   9. Avoid waterways. 
+   
+   10. DRESS IN LAYERS to stay warm, dry and comfortable.
+
+   </pre>
+    <pre class="clicktips1"  style="border-radius:5px;height:50px;text-align:center;cursor:pointer;">
+   
+   Top 6 best CAMPING routes</pre>
+   <pre class="tipsid1" style="height:450px;background-color:rgb(153, 100, 75)">
+   <div id="test">
+			
+		</div>
+   </pre>
+				</pre>
+				</div>
+            
+
+	
+	</div>
+
+    <footer >
+        <div id="logo1" style="margin-bottom:5%;">
+ 
+  <img id="imglogo1" src="Foto/impulse_LOGO.png" alt="Logoja"/>
+ 
+        </div>
+
+        <div class="vertical" >	</div>
+
+    <div style="margin-left: 6%;margin-top:5.3%; float:left;text-align:center; width:11%;margin-bottom:2%;">
+
+                <div style="text-align:center; font-size:125%;width:100%">
+
+                    <a  href="mailto:impuls4@gmail.com" style="text-decoration:none;color:rgb(107, 114, 112);font-family:arial;">
+                        <b>Contact us</b>
+                    </a>
+
+                </div>
+            <br>
+            <hr>
+            <br>
+
+                <div style="font-family:arial;text-align:center;font-size:125%;color:rgb(107, 114, 112);">
+
+                    <b>Follow us:</b>
+
+                </div>
+
+            <br>
+
+  <a href="http://www.facebook.com"><img src="Foto/facebook.png" style="height:33px;width:33px;"></a>
+  <a href="http://www.instagram.com" ><img src="Foto/instagram.png" style="height:33px;width:33px;"></a>
+  <a href="http://www.twitter.com" ><img src="Foto/twitter.png" style="height:33px;width:33px;"></a>
+  <a href="http://www.pinterest.com" ><img src="Foto/pinterest.png" style="height:33px;width:33px;"></a>
+</div>
+        <div class="vertical"></div>
+
+            <div id="123" style="margin-left:3%; margin-top:3%;float:left;width:46%;margin-bottom:1%;">
+             
+        
+
+            </div>
+          
+           
+
+                <div id="abc" >
+      <div id="cde"
+        style="float:left; height:0.5%;width:1.4%; vertical-align:center;margin-left:1.5%;margin-top:0.36%;">
+        <img src="Foto/address3.png" style="height:50%;width:90%; "/>
+      </div>
+
+      <div id="a1311" style="float:left;margin-top:0.45%; width:22%;">
+        <span >
+            <address style="font-size:100%;text-decoration:none;color:rgb(107, 114, 112);" >St. Bajram Kelmendi, Prishtin&euml, Kosov&euml </address>
+        </span>
+      </div>
+
+                        <div id="cde"
+                            style="float:left; height:0.8%;width:1.8%; vertical-align:center;margin-left:11%; margin-top:0.4%;">
+                            <img src="Foto/email1.png" style="height:100%;width:95%; "/>
+                        </div>
+
+                        <div id="a1311" style="float:left;margin-top:0.45%; width:10.8%;">
+                            <span >
+              <a style="font-size:100%;text-decoration:none;color:white;font-style:italic;color:rgb(107, 114, 112);" href="mailto:impuls4@gmail.com">impuls4@gmail.com</a>
+                            </span>
+                        </div>
+
+                        <div id="b1231">
+
+                                    <div style="float:left; height:1.1%;width:1.4%; vertical-align:center;margin-left:12%;margin-top:0.36%;transform:rotate(5deg);">
+                                            <img src="Foto/Telefoni.png" style="height:100%;width:100%;   "/>
+                                    </div>
+
+                                    <div id="c12321" style="float:left;margin-top:0.45%;width:9%;  ">
+                                        <span >
+                                                <code style="font-size:100%;font-style:italic;color:rgb(107, 114, 112);">+377 44-123-241</code>
+                                        </span>
+                                    </div>
+
+
+                                    <div id="d1223" style="float:left;margin-top:0.45%;margin-left:10%; width:16%;">
+                                        <span style="margin-left:0%; font-style:italic ; font-size:100%;color:rgb(107, 114, 112);">
+                                                All rights reserved&copy <strong>IMPULS4<strong>
+                                        </span>
+                                    </div>
+
+                        </div>
+
+
+                </div>
+
+      </footer>
+
+
+  	<div id="homeButton">
+  					<div>
+  							<a href="index.html">
+  								<img src="Foto/homeButton.png" style="height:50px; width:50px" title="Home">
+  							</a>
+  					</div>
+  	</div>
+
+<a onclick="topFunction()" id="myBtn" title="Top"  ></a>
+
+  	</body>
+
+
+
+</html>

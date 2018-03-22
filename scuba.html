@@ -1,0 +1,596 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--logo ne tab -->
+    <link rel="icon" sizes="192x192" href="Foto/01.png">
+    <title>IMPULSE</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery-1.11.2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#buton123").click(function () {
+                $("#fading").fadeToggle(1000, "linear");
+            });
+        });
+
+
+        $(document).ready(function () {
+            $("#buton123").animate({
+                height: "250px",
+            }, 30000, function () {
+                $("#ld").text("Click on ocean");
+            });
+        });
+    </script>
+
+    <style>
+        /*------------------------------------------*/
+        header {
+            background-color: RGB(0,0,0);
+            background-attachment: fixed;
+            min-width: 84em;
+            min-height: 10em;
+        }
+
+        #imgheader {
+            height: 30%;
+            width: 30%;
+            text-align: center;
+        }
+
+        /*Pjesa e logos se faqes per pjesen lart*/
+        img {
+            height: 120px;
+            width: 100px;
+            max-width: 100%;
+            image-orientation: inherit;
+        }
+        /*Ju jep keto karakteristika te gjitha elementeve*/
+        * {
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+        }
+        /*--------------------------------------------*/
+        /*CSS per pjesen e menu-se*/
+        nav {
+            min-width: 84em;
+            margin: 0 0 0 0;
+            font-family: Arial;
+            font-size: 100%;
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            min-height: 2.25em;
+        }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #232323;
+                text-align: center;
+                vertical-align: top;
+                min-height: 2.25em;
+            }
+
+        #nav li {
+            display: inline-block;
+            border-right: 2px solid;
+            border-right-color: #3CC47C;
+        }
+
+        #nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            width: 100px;
+            padding: 10px;
+            text-decoration: none;
+            margin-left: -0.3em;
+        }
+
+
+        #nav li a:hover[href="camp.html"] {
+            background-color: #A0522D;
+        }
+
+        #nav li a:hover[href="hike.html"] {
+            opacity: 0.9;
+            background-color: #86B404;
+            margin-left: 0;
+        }
+
+        #nav li a[href="hike.html"] {
+            margin-left: 0;
+        }
+
+        #nav li a:hover[href="cycle.html"] {
+            opacity: 0.9;
+            background-color: #088A4B;
+        }
+
+        #nav li a:hover[href="Experience.html"] {
+            opacity: 0.9;
+            background-color: #2E9AFE;
+        }
+
+        #nav li a:hover[href="surf.html"] {
+            opacity: 0.9;
+            background-color: #04B4AE;
+        }
+
+        #nav li a[href="scuba.html"] {
+            opacity: 0.9;
+            background-color: rgb(67, 178, 223);
+            
+        }
+
+       
+
+        form {
+            overflow: auto;
+            padding: 0;
+        }
+        /*Vija ne anen e majte te femijes se pare*/
+        #nav li:first-child {
+            border-left: 2px solid;
+            border-left-color: #3CC47C;
+        }
+        /*Vija ne elementin e fundit te listes te mos shfaqet*/
+        #nav li:last-child {
+            border-right: none;
+        }
+
+
+        /*---------------------------------------------------------------------------------*/
+        /*---------------------------------------------------------------------------------*/
+        /*elementet paraqiten horizontalisht */
+        .main-banner {
+            display: flex;
+        }
+        /*Fotoja*/
+        .main-banner {
+            background: url("Foto/scubadiving_1.jpeg");
+            background-size: 100% 100%;
+            min-height: 100%;
+            height: 100%;
+            display: flex;
+            background-repeat: no-repeat;
+            z-index: 2;
+            min-width: 100%;
+        }
+
+
+
+        /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+        /*Vendosja e lartesise, gjatesise, pozicionimi, ngjyra e fontit, largesia nga top dhe z-index(pozicionimi ne raport me div elementet tjera)  */
+        footer {
+            background-color: rgb(35,35,35);
+            position: relative;
+            width: 100%;
+            color: white;
+            z-index: -1;
+            min-width: 84em;
+            float: left;
+            z-index: 2;
+        }
+
+        #imglogo1 {
+            height: 100%;
+            width: 100%;
+        }
+
+
+        /*Div elementi qe duket si vije vertikale per ndarje te te dhenave(footer)*/
+        .vertical {
+            height: 10em;
+            margin-top: 4.5%;
+            border-left: 3px solid lightblue;
+            float: left;
+            margin-left: 6%;
+        }
+
+        /*Div element ne te cilin eshte vendosur llogo(footer)*/
+        #logo1 {
+            float: left;
+            margin-left: 5%;
+            margin-top: 6.9%;
+            width: 20%;
+        }
+
+        .tabela123 {
+            font-size: 100%;
+            width: 100%;
+        }
+        /*Tabela(footer)*/
+        table, tr, th, td {
+            margin-left: 3%;
+            margin-top: 0%;
+            padding: 25px;
+            color: black;
+            padding-top: 3%;
+            text-decoration: underline;
+        }
+
+        .hik {
+            background: url('Foto/scubadiving_3.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hik1 {
+            background: url('Foto/scubadiving_4.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            min-height: 160px;
+            max-width: 160%;
+            max-height: 130%;
+            margin-left: 50%;
+            margin-top: -100%;
+            float: left;
+            padding: 5%;
+            cursor: pointer;
+            background-image: URL('Foto/scubadiving_3.jpg');
+            background-size: 100% 100%;
+        }
+
+        .dropdown-content1 {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            max-width: 160%;
+            max-height: 130%;
+            min-width: 160px;
+            min-height: 160px;
+            margin-left: 50%;
+            margin-top: -100%;
+            float: left;
+            padding: 5%;
+            cursor: pointer;
+            background-image: URL('Foto/scubadiving_4.jpg');
+            background-size: 100% 100%;
+        }
+
+        .dropdown {
+            width: 25%;
+            position: relative;
+            display: block;
+        }
+
+        .drop {
+            padding: 3%;
+            margin-left: 0;
+            margin-top: 0%;
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            height: 150%;
+            width: 360%;
+            margin-left: -33%;
+        }
+
+        .dropdown:hover .dropdown-content1 {
+            display: block;
+            height: 150%;
+            width: 360%;
+            margin-left: -33%;
+        }
+
+        * {
+            font-family: 'Trebuchet ms'
+        }
+
+        nav ul li form input[type = text] {
+            padding-left: 0;
+            opacity: 0.8;
+        }
+
+            nav ul li form input[type = text]:focus {
+                padding-left: 0;
+                opacity: 1;
+            }
+
+        mark {
+            background-color: lightblue;
+            color: Black;
+        }
+
+        #div1, #div2 {
+            transform: translate(-5%,-30%);
+            float: left;
+            background-color: rgb(67, 178, 223);
+            width: 100px;
+            height: 7.5em;
+            margin: 10px;
+            padding: 0px;
+            border: 1px solid black;
+            float: left;
+            margin-top: 3%;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            z-index: 99;
+            height: 25px;
+            width: 25px;
+            cursor: pointer;
+            background: URL('Foto/TopPage.png') no-repeat;
+            background-size: 25px,25px;
+            bottom: 5%;
+            right: 2%;
+            transform: scale(2,2);
+        }
+
+            #myBtn:hover {
+                opacity: 0.8;
+            }
+
+        /*Div element per homeButton*/
+        #homeButton {
+            position: fixed;
+            bottom: 3%;
+            left: 1%;
+            z-index: 2;
+        }
+
+            #homeButton:hover {
+                opacity: 0.8;
+            }
+
+        mark {
+            background-color: lightblue;
+            color: Black;
+        }
+
+        #buton123 {
+            width: 100%;
+            background: url("Foto/giphy4.gif") 70% 40% no-repeat;
+            border: none;
+            background-size: 100%;
+            border-radius: 2px;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+
+    <script>
+        // Pra regexI eshte case-insensitive
+        var patt = /scuba-diving/i;
+        var text = 'SCUBA-diving is on of the best outdoor activities';
+        var result = text.match(patt);
+        function a() {
+            document.getElementById('regexI').innerHTML = result;
+        }
+    </script>
+    <script>
+        // Kur scroll posht 135 px vendose butonin TOP
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 135 || document.documentElement.scrollTop > 135) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // Kur klikon butonin dergo ne top
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+
+
+<body style="background-color:#ececec;">
+    <header>
+
+        <img src="Foto/ImpulseScuba.png" id="imgheader" alt="Impulse" style="margin-top:1.5%;margin-bottom:1.5%;margin-left:34.9%;" />
+
+    </header>
+    <nav>
+        <a></a>
+        <ul id="nav">
+
+            <li><a href="hike.html">Hiking</a></li>
+            <li><a href="surf.html">Surfing</a></li>
+            <li><a href="scuba.html">Scuba Diving</a></li>
+            <li><a href="camp.html">Camping</a></li>
+            <li><a href="cycle.html">Cycling</a></li>
+            <li><a href="Experience.html" id="exp">Experiences</a></li>
+           
+
+            <li>
+
+            <li style="vertical-align:middle;">
+                <form action="https://www.google.com" method="GET" target="_blank" style="border-radius:2px;background-color:#314a37;padding:4px; ">
+                    <input type="text" placeholder="Search Location" name="q" style=" line-height: 22px;border:none;border-radius:2px;font-family:sans-serif;font-style: normal;">
+                    <input type="submit" value="Submit" ; style=" box-shadow:1px 1px 0 #677B66;border:none; background: #C1DEC0;line-height:22px;cursor: pointer;border-radius:2px;font-family:sans-serif;font-style: normal;">
+                </form>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <div style="background-color:#ececec; width:100%;min-width:84em; float:left;">
+        <div style="margin-left:10.5%; width:58%;min-width:48.8em; float:left;border:0.1px solid black; ">
+            
+
+  
+           
+
+              
+            <br />
+
+
+
+
+
+
+        
+            
+       
+   
+            <div id="ld" style="color:rgb(56,125,148);"></div>
+        </div>
+
+
+
+
+        <div style="width:21.3%; display:inline-block; height:300px; padding-left:10%;   ">
+            <br>
+
+        </div>
+        <footer>
+            <div id="logo1" style="margin-bottom:5%;">
+
+                <img id="imglogo1" src="Foto/impulse_LOGO.png" alt="Logoja" />
+
+            </div>
+
+            <div class="vertical">	</div>
+
+            <div style="margin-left: 6%;margin-top:5.3%; float:left;text-align:center; width:11%;margin-bottom:2%;">
+
+                <div style="text-align:center; font-size:125%;width:100%">
+
+                    <a href="mailto:impuls4@gmail.com" style="text-decoration:none;color:rgb(107, 114, 112);font-family:arial;">
+                        <b>Contact us</b>
+                    </a>
+
+                </div>
+                <br>
+                <hr>
+                <br>
+
+                <div style="font-family:arial;text-align:center;font-size:125%;color:rgb(107, 114, 112);">
+
+                    <b>Follow us:</b>
+
+                </div>
+
+                <br>
+
+                <a href="http://www.facebook.com"><img src="Foto/facebook.png" style="height:33px;width:33px;"></a>
+                <a href="http://www.instagram.com"><img src="Foto/instagram.png" style="height:33px;width:33px;"></a>
+                <a href="http://www.twitter.com"><img src="Foto/twitter.png" style="height:33px;width:33px;"></a>
+                <a href="http://www.pinterest.com"><img src="Foto/pinterest.png" style="height:33px;width:33px;"></a>
+            </div>
+            <div class="vertical"></div>
+
+            <div id="123" style="margin-left:3%; margin-top:3%;float:left;width:46%;margin-bottom:1%;">
+
+
+
+
+            </div>
+
+
+
+            <div id="abc">
+                <div id="cde"
+                     style="float:left; height:0.5%;width:1.4%; vertical-align:center;margin-left:1.5%;margin-top:0.36%;">
+                    <img src="Foto/address3.png" style="height:50%;width:90%; " />
+                </div>
+
+                <div id="a1311" style="float:left;margin-top:0.45%; width:22%;">
+                    <span>
+                        <address style="font-size:100%;text-decoration:none;color:rgb(107, 114, 112);">St. Bajram Kelmendi, Prishtin&euml, Kosov&euml </address>
+                    </span>
+                </div>
+
+                <div id="cde"
+                     style="float:left; height:0.8%;width:1.8%; vertical-align:center;margin-left:11%; margin-top:0.4%;">
+                    <img src="Foto/email1.png" style="height:100%;width:95%; " />
+                </div>
+
+                <div id="a1311" style="float:left;margin-top:0.45%; width:10.8%;">
+                    <span>
+                        <a style="font-size:100%;text-decoration:none;color:white;font-style:italic;color:rgb(107, 114, 112);" href="mailto:impuls4@gmail.com">impuls4@gmail.com</a>
+                    </span>
+                </div>
+
+                <div id="b1231">
+
+                    <div style="float:left; height:1.1%;width:1.4%; vertical-align:center;margin-left:12%;margin-top:0.36%;transform:rotate(5deg);">
+                        <img src="Foto/Telefoni.png" style="height:100%;width:100%;   " />
+                    </div>
+
+                    <div id="c12321" style="float:left;margin-top:0.45%;width:9%;  ">
+                        <span>
+                            <code style="font-size:100%;font-style:italic;color:rgb(107, 114, 112);">+377 44-123-241</code>
+                        </span>
+                    </div>
+
+
+                    <div id="d1223" style="float:left;margin-top:0.45%;margin-left:10%; width:16%;">
+                        <span style="margin-left:0%; font-style:italic ; font-size:100%;color:rgb(107, 114, 112);">
+                            All rights reserved&copy <strong>IMPULS4<strong>
+                        </span>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </footer>
+
+        <div id="homeButton">
+            <div>
+                <a href="index.html">
+                    <img src="Foto/homeButton.png" style="height:50px; width:50px" title="Home">
+                </a>
+            </div>
+        </div>
+
+        <a onclick="topFunction()" id="myBtn" title="Top"></a>
+
+</body>
+
+
+
+</html>
+
+
+
