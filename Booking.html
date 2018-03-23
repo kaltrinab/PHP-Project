@@ -1,467 +1,508 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <!--logo ne tab -->
-    <link rel="icon" sizes="192x192" href="Foto/01.png">
-    <title>IMPULSE</title>
+ <meta charset="utf-8" />
+ <!--logo ne tab -->
+<link rel="icon" sizes="192x192" href="Foto/01.png">
+ <title>IMPULSE</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="jquery-1.11.2.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#tools").css("border", "3px solid #7ABA87");
-        });
+
+
+<style>
+/*------------------------------------------*/
+header {
+    background-color: RGB(0,0,0);
+    background-attachment: fixed;
+    min-width:84em;
+    min-height: 10em;
+}
+label
+{
+    width: 100px;
+    display: inline-block;
+}
+input[type=text]
+{
+    display: inline-block;
+}
+#imgheader{
+  height:30%;
+  width:30%;
+  text-align:center;
+
+}
+
+
+/*Pjesa e logos se faqes per pjesen lart*/
+img {
+    height: 120px;
+    width: 100px;
+    max-width: 100%;
+    image-orientation: inherit;
+}
+ /*Ju jep keto karakteristika te gjitha elementeve*/
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+/*--------------------------------------------*/
+/*CSS per pjesen e menu-se*/
+nav {min-width:84em;
+    margin: 0 0 0 0;
+    font-family: Arial;
+    font-size: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    min-height:2.25em;
+     
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #232323;
+        text-align: center;
+        vertical-align: top;
+        min-height:2.25em;
+    }
+
+#nav li {
+    display: inline-block;
+    border-right: 2px solid;
+    border-right-color: #3CC47C;
+}
+
+#nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    text-decoration: none;
+      margin-left:-0.3em;
+}
+
+
+#nav li a:hover[href="camp.html"]{
+
+  background-color: #A0522D;
+}
+#nav li a:hover[href="hike.html"]{
+opacity:0.9;
+  background-color: #86B404;
+  margin-left:0;
+}
+#nav li a[href="hike.html"]{
+  margin-left:0;
+}
+#nav li a[href="cycle.html"]{
+opacity:0.9;
+  background-color: #088A4B ;
+}
+#nav li a:hover[href="Experience.html"]{
+opacity:0.9;
+  background-color:  #2E9AFE;
+}
+#nav li a:hover[href="surf.html"]{
+opacity:0.9;
+  background-color:#04B4AE;
+}
+#nav li a:hover[href="scuba.html"]{
+opacity:0.9;
+  background-color:#2ECCFA;
+}
+#nav li a:hover[href="Game.html"]{
+    background-color:rgb(71, 71, 90);
+}
+
+
+form {
+    overflow: auto;
+    padding: 0;
+}
+/*Vija ne anen e majte te femijes se pare*/
+#nav li:first-child {
+    border-left: 2px solid;
+    border-left-color: #3CC47C;
+}
+    /*Vija ne elementin e fundit te listes te mos shfaqet*/
+#nav li:last-child {
+    border-right: none;
+}
+
+
+   
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Vendosja e lartesise, gjatesise, pozicionimi, ngjyra e fontit, largesia nga top dhe z-index(pozicionimi ne raport me div elementet tjera)  */
+footer
+{
+background-color: rgb(35,35,35);
+position:relative;
+width:100%;
+color:white;
+z-index:-1;
+min-width:84em;
+float:left;
+
+}
+
+#imglogo1
+{
+height:100%;
+width:100%;
+}
+
+
+/*Div elementi qe duket si vije vertikale per ndarje te te dhenave(footer)*/
+.vertical
+{
+height:10em;
+
+margin-top:4.5%;
+border-left:3px solid lightblue;
+float:left;
+margin-left:6%;
+}
+
+/*Div element ne te cilin eshte vendosur llogo(footer)*/
+#logo1
+{
+float:left;
+margin-left: 5%;
+margin-top: 6.9%;
+width:20%;
+}
+.tabela123{
+    font-size:100%;
+   width:100%;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  height:25px;
+  width:25px;
+  cursor: pointer;
+  background: URL('Foto/TopPage.png') no-repeat;
+  background-size: 25px,25px;
+  bottom: 5%;
+  right: 2%;
+  transform: scale(2,2);
+}
+#myBtn:hover{
+  opacity:0.8;
+}
+
+/*Div element per homeButton*/
+#homeButton
+{
+position: fixed;
+  bottom: 3%;
+  left: 1%;
+}
+#homeButton:hover{
+  opacity:0.8;
+}
+
+.dropdown {
+width:25%;
+position: relative;
+display: block;
+}
+.drop {
+    padding:3%;
+    margin-left:0;
+    margin-top:0%;
+    cursor: pointer;
+    height:100%;
+    width:100%;
+
+}
+.dropdown:hover {
+display: block;
+height:150%;
+width:360%;
+margin-left:-33%;
+}
+.dropdown:hover {
+display: block;
+height:150%;
+width:360%;
+margin-left:-33%;
+}
+
+*{
+font-family:'Trebuchet ms'
+}
+nav ul li form input[type = text]{
+
+  padding-left: 0;
+  opacity: 0.8;
+}
+nav ul li form input[type = text]:focus{
+
+  padding-left: 0;
+  opacity: 1;
+}
 
 
 
-        $(document).ready(function () {
-            $("#sliding").click(function () {
-                $("#downslide").slideToggle("slow");
-            });
-        });
-    </script>
 
-    <style>
-        /*------------------------------------------*/
-        header {
-            background-color: RGB(0,0,0);
-            background-attachment: fixed;
-            min-width: 84em;
-            min-height: 10em;
-        }
-
-        #imgheader {
-            height: 30%;
-            width: 30%;
-            text-align: center;
-        }
-
-
-        /*Pjesa e logos se faqes per pjesen lart*/
-        img {
-            height: 120px;
-            width: 100px;
-            max-width: 100%;
-            image-orientation: inherit;
-        }
-        /*Ju jep keto karakteristika te gjitha elementeve*/
-        * {
-            margin: 0;
-            padding: 0;
-            line-height: 1;
-        }
-        /*--------------------------------------------*/
-        /*CSS per pjesen e menu-se*/
-        nav {
-            min-width: 84em;
-            margin: 0 0 0 0;
-            font-family: Arial;
-            font-size: 100%;
-            width: 100%;
-            overflow: hidden;
-            text-align: center;
-            min-height: 2.25em;
-        }
-
-            nav ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #232323;
-                text-align: center;
-                vertical-align: top;
-                min-height: 2.25em;
-            }
-
-        #nav li {
-            display: inline-block;
-            border-right: 2px solid;
-            border-right-color: #3CC47C;
-        }
-
-        #nav a {
-            display: block;
-            color: white;
-            text-align: center;
-            width: 100px;
-            padding: 10px;
-            text-decoration: none;
-            margin-left: -0.3em;
-        }
-
-
-        #nav li a:hover[href="Bistro.html"] {
-            background-color: #A0522D;
-        }
-
-        #nav li a:hover[href="Rooms.html"] {
-            opacity: 0.9;
-            background-color: #86B404;
-            margin-left: 0;
-        }
-
-        #nav li a[href="Rooms.html"] {
-            margin-left: 0;
-        }
-
-        #nav li a[href="Booking.html"] {
-            opacity: 0.9;
-            background-color: #088A4B;
-        }
-
-        #nav li a:hover[href="Contact.html"] {
-            opacity: 0.9;
-            background-color: #2E9AFE;
-        }
-
-        #nav li a:hover[href="Conference.html"] {
-            opacity: 0.9;
-            background-color: #04B4AE;
-        }
-
-        #nav li a:hover[href="Tours.html"] {
-            opacity: 0.9;
-            background-color: #2ECCFA;
-        }
-
-       
-
-        form {
-            overflow: auto;
-            padding: 0;
-        }
-        /*Vija ne anen e majte te femijes se pare*/
-        #nav li:first-child {
-            border-left: 2px solid;
-            border-left-color: #3CC47C;
-        }
-        /*Vija ne elementin e fundit te listes te mos shfaqet*/
-        #nav li:last-child {
-            border-right: none;
-        }
-
-
-        /*---------------------------------------------------------------------------------*/
-        /*---------------------------------------------------------------------------------*/
-        /*elementet paraqiten horizontalisht */
-        .main-banner {
-            display: flex;
-        }
-        /*Fotoja*/
-        .main-banner {
-            background: url("Foto/cycling_1.jpg");
-            background-size: 100% 100%;
-            min-height: 100%;
-            height: 100%;
-            display: flex;
-            background-repeat: no-repeat;
-            z-index: 2;
-            min-width: 100%;
-        }
-
-        /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
-
-        /*Vendosja e lartesise, gjatesise, pozicionimi, ngjyra e fontit, largesia nga top dhe z-index(pozicionimi ne raport me div elementet tjera)  */
-        footer {
-            background-color: rgb(35,35,35);
-            position: relative;
-            width: 100%;
-            color: white;
-            z-index: -1;
-            min-width: 84em;
-            float: left;
-        }
-
-        #imglogo1 {
-            height: 100%;
-            width: 100%;
-        }
-
-
-        /*Div elementi qe duket si vije vertikale per ndarje te te dhenave(footer)*/
-        .vertical {
-            height: 10em;
-            margin-top: 4.5%;
-            border-left: 3px solid lightblue;
-            float: left;
-            margin-left: 6%;
-        }
-
-        /*Div element ne te cilin eshte vendosur llogo(footer)*/
-        #logo1 {
-            float: left;
-            margin-left: 5%;
-            margin-top: 6.9%;
-            width: 20%;
-        }
-
-       
-
-        #myBtn {
-            display: none;
-            position: fixed;
-            z-index: 99;
-            height: 25px;
-            width: 25px;
-            cursor: pointer;
-            background: URL('Foto/TopPage.png') no-repeat;
-            background-size: 25px,25px;
-            bottom: 5%;
-            right: 2%;
-            transform: scale(2,2);
-        }
-
-            #myBtn:hover {
-                opacity: 0.8;
-            }
-
-        /*Div element per homeButton*/
-        #homeButton {
-            position: fixed;
-            bottom: 3%;
-            left: 1%;
-        }
-
-            #homeButton:hover {
-                opacity: 0.8;
-            }
-
-
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Poly-Regular.ttf);
     
+}
+h3{
+    font-family: myFirstFont;
+    font-weight: bold;
+}
+</style>
+<script>
+// Kur scroll posht 135 px vendose butonin TOP
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+    if (document.body.scrollTop > 135 || document.documentElement.scrollTop > 135) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
 
-        * {
-            font-family: 'Trebuchet ms'
-        }
-
-        nav ul li form input[type = text] {
-            padding-left: 0;
-            opacity: 0.8;
-        }
-
-            nav ul li form input[type = text]:focus {
-                padding-left: 0;
-                opacity: 1;
-            }
-
-        #kolonat {
-            -webkit-column-count: 2;
-            column-count: 2;
-            -webkit-column-gap: 20px;
-            column-gap: 20px;
-            -webkit-column-rule: 10px outset #7ABA87;
-            column-rule: 10px outset #7ABA87;
-        }
-
-        #downslide, #sliding {
-            padding: 5px;
-            background-color: #7ABA87;
-            width: 90px;
-            height: 20px;
-            display: absolute;
-        }
-
-        #downslide {
-            width: 98.7%;
-            height: 200px;
-            display: none;
-        }
-
-        @font-face {
-            font-family: myFirstFont;
-            src: url(fonts/Poly-Regular.ttf);
-        }
-
-        h3 {
-            font-family: myFirstFont;
-            font-weight: bold;
-        }
-    </style>
-    <script>
-        // Kur scroll posht 135 px vendose butonin TOP
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 135 || document.documentElement.scrollTop > 135) {
-                document.getElementById("myBtn").style.display = "block";
-            } else {
-                document.getElementById("myBtn").style.display = "none";
-            }
-        }
-
-        // Kur klikon butonin dergo ne top
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+// Kur klikon butonin dergo ne top
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 </head>
 
 
 <body style="background-color:#ececec;">
 
-    <header>
+ <header>
+  
+   <img src="Foto/ImpulseCycling.png" id="imgheader" alt="Impulse" style="margin-top:1.5%;margin-bottom:1.5%;margin-left:34.9%" />
 
-        <img src="Foto/ImpulseBooking.png" id="imgheader" alt="Impulse" style="margin-top:1.5%;margin-bottom:1.5%;margin-left:34.9%" />
-
-    </header>
-    <nav>
+ </header>
+ <nav>
         <ul id="nav">
 
-            <li><a href="Rooms.html">Rooms</a></li>
-            <li><a href="Conference.html">Conference</a></li>
-            <li><a href="Tours.html">Tours</a></li>
-            <li><a href="Bistro.html">Bistro</a></li>
-            <li><a href="Booking.html">Booking</a></li>
-            <li><a href="Contact.html" id="exp">Contact</a></li>
-            
+            <li><a href="hike.html">Hiking</a></li>
+            <li><a href="surf.html">Surfing</a></li>
+            <li><a href="scuba.html">Scuba Diving</a></li>
+            <li><a href="camp.html">Camping</a></li>
+            <li><a href="cycle.html">Booking</a></li>
+             <li><a href="Experience.html" id="exp">Experiences</a></li>
+         
 
             <li>
 
-            <li style="vertical-align:middle;">
+              <li style="vertical-align:middle;">
 
 
-                <form action="https://www.google.com" method="GET" target="_blank" style="border-radius:2px;background-color:#314a37;padding:4px; ">
-                    <input type="text" placeholder="Search Location" name="q" style=" line-height: 22px;border:none;border-radius:2px;font-family:sans-serif;font-style: normal;">
-                    <input type="submit" value="Submit" ; style=" box-shadow:1px 1px 0 #677B66;border:none; background: #C1DEC0;line-height:22px;cursor: pointer;border-radius:2px;font-family:sans-serif;font-style: normal;">
-                </form>
-            </li>
+                              <form action="https://www.google.com" method="GET" target="_blank" style="border-radius:2px;background-color:#314a37;padding:4px; ">
+                                  <input type="text" placeholder="Search Location" name="q" style=" line-height: 22px;border:none;border-radius:2px;font-family:sans-serif;font-style: normal;">
+                                  <input type="submit" value="Submit"; style=" box-shadow:1px 1px 0 #677B66;border:none; background: #C1DEC0;line-height:22px;cursor: pointer;border-radius:2px;font-family:sans-serif;font-style: normal;">
+                              </form>
+              </li>
         </ul>
     </nav>
 
-
- 
-
-    <div style=" background-color:#ececec; width:100%;min-width:84em; float:left;">
-        <div style=" margin-left:10.5%; width:58%;min-width:48.8em; float:left;border:0.1px solid black; ">
-            <pre style="white-space: pre-wrap; padding:10px; margin: 1em 0;">
-
-</pre>
-
-
-
-            <br><br>
-           
-
-
-
+    
+    <div style=" min-width:84em; float:left;  width:100%;"> <!-- Per mos mu nda qajo pjesa nalt kur e resize browser-->
+        
         </div>
-        <div style="width:21.3%; display:inline-block; height:300px; padding-left:10%;   ">
-            <br>
 
-
-
-        </div>
     </div>
 
+    <div class="dropdown" style="margin-top:5.5% ; margin-left:27%;height:35%;width:45%;" >   
+    
+<form action="" method="GET"><fieldset>
+    
+    <legend>Personal details:</legend>
+    <br><br>
+    <label>Username:</label>
+   <!-- Cfaredo username qe permban vetem shkronja dhe te pakten 3-->
+    <input type="text" name="username" required="" autofocus="" placeholder="Username" pattern="[a-zA-Z]{3,}" title="Username should be at least 3 letters">
+    <br><br>
+    <label>First Name:</label>
+    <input type="text" name="firstname" required="" placeholder="First Name">
+    <br><br>
+    <label>Last Name:</label>
+    <input type="text" name="lastname" required="" placeholder="Last Name">
+    <br><br>
+    <label>E-mail:</label>
+    <input type="email" name="email" id="email" required placeholder="e-mail" title="Please enter a valid email address">
+     <br><br>
+     <label>Phone Number:</label>
+     <input type="tel" name="phone" id="phone" required placeholder="Please enter your phone number ">
+     <br><br>
+     <select name="select" class="select-field" style="height:2em;font-size:15px;outline:none;text-indent:1%;border-style:none;border-radius:10px ;border:2px solid #18121e; margin-left:3%;">
+                        <option value="Country">Country</option>
+                        <option value="Kosovo">Kosovo</option>
+                        <option value="Albania">Albania</option>
+                        <option value="France">France</option>
+                        <option value="England">England</option>
+                        <option value="America">America</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br><br>
+                </fieldset>
+                    
+                    <fieldset>
+                        <legend>Booking details:</legend>
+                        <br><br>
+                        <label>Arrival date:</label>
+                        <input type="date" name="date" >
+                        <label style="width: 50px;">Until:</label>
+                        <input type="date" name="until">
+                        <br><br>
+                        <label>Number Of Guests:</label>
+                    <!--Minimum 1 dhe maximum 6 guests per dhomen e njejte -->
+                        <input type="number" name="NumberOfGuests" min="1" max="6">
+                            <br><br>
+                        <p>Do you require meals?</p>
+                        <br>
+                        <input type="radio" name="meals" value="yesMeals">
+                         <label>Yes</label>
+                        <input type="radio" name="meals" value="noMeals">
+                        <label>No</label>
+                        
+                        <br><br>
+                        <input type="checkbox" name="balcony" value="yes" checked>
+                        <br>
+
+                        <input type="image" src="foto/submit.png" width="100px;" align="right">
+
+    </fieldset></form>
 
 
-    <footer>
+     </div>   
+
+
+
+
+
+   
+     <footer >
         <div id="logo1" style="margin-bottom:5%;">
-
-            <img id="imglogo1" src="Foto/impulse_LOGO.png" alt="Logoja" />
-
+ 
+  <img id="imglogo1" src="Foto/impulse_LOGO.png" alt="Logoja"/>
+ 
         </div>
 
-        <div class="vertical">	</div>
+        <div class="vertical" > </div>
 
-        <div style="margin-left: 6%;margin-top:5.3%; float:left;text-align:center; width:11%;margin-bottom:2%;">
+    <div style="margin-left: 6%;margin-top:5.3%; float:left;text-align:center; width:11%;margin-bottom:2%;">
 
-            <div style="text-align:center; font-size:125%;width:100%">
+                <div style="text-align:center; font-size:125%;width:100%">
 
-                <a href="mailto:impuls4@gmail.com" style="text-decoration:none;color:rgb(107, 114, 112);font-family:arial;">
-                    <b>Contact us</b>
-                </a>
+                    <a  href="mailto:impuls4@gmail.com" style="text-decoration:none;color:rgb(107, 114, 112);font-family:arial;">
+                        <b>Contact us</b>
+                    </a>
 
-            </div>
+                </div>
             <br>
             <hr>
             <br>
 
-            <div style="font-family:arial;text-align:center;font-size:125%;color:rgb(107, 114, 112);">
+                <div style="font-family:arial;text-align:center;font-size:125%;color:rgb(107, 114, 112);">
 
-                <b>Follow us:</b>
+                    <b>Follow us:</b>
 
-            </div>
+                </div>
 
             <br>
 
-            <a href="http://www.facebook.com"><img src="Foto/facebook.png" style="height:33px;width:33px;"></a>
-            <a href="http://www.instagram.com"><img src="Foto/instagram.png" style="height:33px;width:33px;"></a>
-            <a href="http://www.twitter.com"><img src="Foto/twitter.png" style="height:33px;width:33px;"></a>
-            <a href="http://www.pinterest.com"><img src="Foto/pinterest.png" style="height:33px;width:33px;"></a>
-        </div>
+  <a href="http://www.facebook.com"><img src="Foto/facebook.png" style="height:33px;width:33px;"></a>
+  <a href="http://www.instagram.com" ><img src="Foto/instagram.png" style="height:33px;width:33px;"></a>
+  <a href="http://www.twitter.com" ><img src="Foto/twitter.png" style="height:33px;width:33px;"></a>
+  <a href="http://www.pinterest.com" ><img src="Foto/pinterest.png" style="height:33px;width:33px;"></a>
+</div>
         <div class="vertical"></div>
 
-        <div id="123" style="margin-left:3%; margin-top:3%;float:left;width:46%;margin-bottom:1%;">
-           
-        </div>
+            <div id="123" style="margin-left:3%; margin-top:3%;float:left;width:46%;margin-bottom:1%;">
+              
+   
 
-       
-
-        <div id="abc">
-            <div id="cde"
-                 style="float:left; height:0.5%;width:1.4%; vertical-align:center;margin-left:1.5%;margin-top:0.36%;">
-                <img src="Foto/address3.png" style="height:50%;width:90%; " />
             </div>
+          
+          
 
-            <div id="a1311" style="float:left;margin-top:0.45%; width:22%;">
-                <span>
-                    <address style="font-size:100%;text-decoration:none;color:rgb(107, 114, 112);">St. Bajram Kelmendi, Prishtin&euml, Kosov&euml </address>
-                </span>
-            </div>
+                <div id="abc" >
+      <div id="cde"
+        style="float:left; height:0.5%;width:1.4%; vertical-align:center;margin-left:1.5%;margin-top:0.36%;">
+        <img src="Foto/address3.png" style="height:50%;width:90%; "/>
+      </div>
 
-            <div id="cde"
-                 style="float:left; height:0.8%;width:1.8%; vertical-align:center;margin-left:11%; margin-top:0.4%;">
-                <img src="Foto/email1.png" style="height:100%;width:95%; " />
-            </div>
+      <div id="a1311" style="float:left;margin-top:0.45%; width:22%;">
+        <span >
+            <address style="font-size:100%;text-decoration:none;color:rgb(107, 114, 112);" >St. Bajram Kelmendi, Prishtin&euml, Kosov&euml </address>
+        </span>
+      </div>
 
-            <div id="a1311" style="float:left;margin-top:0.45%; width:10.8%;">
-                <span>
-                    <a style="font-size:100%;text-decoration:none;color:white;font-style:italic;color:rgb(107, 114, 112);" href="mailto:impuls4@gmail.com">impuls4@gmail.com</a>
-                </span>
-            </div>
+                        <div id="cde"
+                            style="float:left; height:0.8%;width:1.8%; vertical-align:center;margin-left:11%; margin-top:0.4%;">
+                            <img src="Foto/email1.png" style="height:100%;width:95%; "/>
+                        </div>
 
-            <div id="b1231">
+                        <div id="a1311" style="float:left;margin-top:0.45%; width:10.8%;">
+                            <span >
+              <a style="font-size:100%;text-decoration:none;color:white;font-style:italic;color:rgb(107, 114, 112);" href="mailto:impuls4@gmail.com">impuls4@gmail.com</a>
+                            </span>
+                        </div>
 
-                <div style="float:left; height:1.1%;width:1.4%; vertical-align:center;margin-left:12%;margin-top:0.36%;transform:rotate(5deg);">
-                    <img src="Foto/Telefoni.png" style="height:100%;width:100%;   " />
+                        <div id="b1231">
+
+                                    <div style="float:left; height:1.1%;width:1.4%; vertical-align:center;margin-left:12%;margin-top:0.36%;transform:rotate(5deg);">
+                                            <img src="Foto/Telefoni.png" style="height:100%;width:100%;   "/>
+                                    </div>
+
+                                    <div id="c12321" style="float:left;margin-top:0.45%;width:9%;  ">
+                                        <span >
+                                                <code style="font-size:100%;font-style:italic;color:rgb(107, 114, 112);">+377 44-123-241</code>
+                                        </span>
+                                    </div>
+
+
+                                    <div id="d1223" style="float:left;margin-top:0.45%;margin-left:10%; width:16%;">
+                                        <span style="margin-left:0%; font-style:italic ; font-size:100%;color:rgb(107, 114, 112);">
+                                                All rights reserved&copy <strong>IMPULS4<strong>
+                                        </span>
+                                    </div>
+
+                        </div>
+
+
                 </div>
 
-                <div id="c12321" style="float:left;margin-top:0.45%;width:9%;  ">
-                    <span>
-                        <code style="font-size:100%;font-style:italic;color:rgb(107, 114, 112);">+377 44-123-241</code>
-                    </span>
-                </div>
-
-
-                <div id="d1223" style="float:left;margin-top:0.45%;margin-left:10%; width:16%;">
-                    <span style="margin-left:0%; font-style:italic ; font-size:100%;color:rgb(107, 114, 112);">
-                        All rights reserved&copy <strong>IMPULS4<strong>
-                    </span>
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </footer>
+      </footer>
 
     <div id="homeButton">
-        <div>
-            <a href="index.html">
-                <img src="Foto/homeButton.png" style="height:50px; width:50px" title="Home">
-            </a>
-        </div>
+                    <div>
+                            <a href="index.html">
+                                <img src="Foto/homeButton.png" style="height:50px; width:50px" title="Home">
+                            </a>
+                    </div>
     </div>
 
 
-    <a onclick="topFunction()" id="myBtn" title="Top"></a>
+    <a onclick="topFunction()" id="myBtn" title="Top" ></a>
 
-</body>
+    </body>
 
 
 
