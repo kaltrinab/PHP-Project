@@ -25,6 +25,15 @@ label
 #frmBooking{
     min-width:500px;
 }
+#transparente{
+    padding: 26px;
+        
+       background-color: rgba(0,0,0,.70);
+        border: 1px solid white;
+        border-radius: .6em;
+        min-width: 500px;
+        color: white;  
+}
 input[type=text]
 {
     display: inline-block;
@@ -278,7 +287,7 @@ function topFunction() {
 </head>
 
 
-<body style="background-color:#ececec;">
+<body style="background-color:#ececec; ">
 
  <header>
   
@@ -315,7 +324,7 @@ function topFunction() {
     </div>
 
     <div class="dropdown" style="margin-top:5.5% ; margin-left:27%;height:35%;width:45%;" >   
-    
+    <article id="transparente">
 <form id="frmBooking" action="" method="GET"><fieldset>
     
     <legend>Personal details:</legend>
@@ -359,10 +368,14 @@ function topFunction() {
                         <label style="width: 50px;">Until:</label>
                         <input type="date" name="until">
                         <br><br>
-                        <label>Number Of Guests:</label>
-                    <!--Minimum 1 dhe maximum 6 guests per dhomen e njejte -->
-                        <input type="number" name="NumberOfGuests" min="1" max="6">
-                            <br><br>
+                       
+                      <!--Minimum 1 dhe maximum 6 guests per dhomen e njejte -->
+                            <label>Adults<span style="color: red;"> *</span></label>
+                            <input type="number" name="adults" min="1" max="3">
+                             <br><br>
+                            <label>Children</label>
+                            <input type="number" name="children" min="0" max="3" />
+                         <br>
                         <p>Do you require meals?</p>
                         <br>
                         <input type="radio" name="meals" value="yesMeals">
@@ -380,11 +393,12 @@ function topFunction() {
 <textarea id="data_10" false name="data_10" style="width : 450px;" rows="6" class="form-control"></textarea>
 </div>
 
-<div>
-    </fieldset></form>
+
+    </fieldset></form></article>
 
 
      </div>   
+
 
 
 
