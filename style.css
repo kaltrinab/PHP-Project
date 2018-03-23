@@ -66,7 +66,7 @@ nav {min-width:84em;
       margin-left:-0.3em;
 }
 
-        #nav li a:hover[href="Impulsi Camping.html"]{
+        #nav li a:hover[href="Impulsi Bistro.html"]{
 
           background-color: #A0522D;
         }
@@ -78,15 +78,15 @@ nav {min-width:84em;
         #nav li a[href="Impulsi HIKING.html"]{
           margin-left:0;
         }
-        #nav li a:hover[href="Impulsi Cycling.html"]{
+        #nav li a:hover[href="Impulsi Booking.html"]{
         opacity:0.9;
           background-color: #088A4B;
         }
-        #nav li a:hover[href="Experience.html"]{
+        #nav li a:hover[href="Contact.html"]{
         opacity:0.9;
           background-color:  #2E9AFE;
         }
-        #nav li a:hover[href="Impulsi Surfing.html"]{
+        #nav li a:hover[href="Impulsi Conference.html"]{
         opacity:0.9;
           background-color:#04B4AE;
         }
@@ -111,31 +111,31 @@ nav {min-width:84em;
         #nav li:last-child {
             border-right: none;
         }
-        #nav li a:hover[href="camp.html"]{
+        #nav li a:hover[href="Bistro.html"]{
 
             background-color: #A0522D;
           }
-          #nav li a:hover[href="hike.html"]{
+          #nav li a:hover[href="Rooms.html"]{
           opacity:0.9;
             background-color: #86B404;
             margin-left:0;
           }
-          #nav li a[href="hike.html"]{
+          #nav li a[href="Rooms.html"]{
             margin-left:0;
           }
-          #nav li a:hover[href="cycle.html"]{
+          #nav li a:hover[href="Booking.html"]{
           opacity:0.9;
             background-color: #088A4B;
           }
-          #nav li a:hover[href="Experience.html"]{
+          #nav li a:hover[href="Contact.html"]{
           opacity:0.9;
             background-color:  #2E9AFE;
           }
-          #nav li a:hover[href="surf.html"]{
+          #nav li a:hover[href="Conference.html"]{
           opacity:0.9;
             background-color:#04B4AE;
           }
-          #nav li a:hover[href="scuba.html"]{
+          #nav li a:hover[href="Tours.html"]{
           opacity:0.9;
             background-color:#2ECCFA;
           }
@@ -292,22 +292,6 @@ margin-left: 5%;
 margin-top: 6.9%;
 width:20%;
 }
-.tabela123{
-    font-size:100%;
-   width:100%;
-}
-/*Tabela(footer)*/
-table,tr, th,td
-{
-
-margin-left:3%;
-margin-top:0%;
-padding:25px;
-color:black;
-padding-top:3%;
-text-decoration:underline;
-}
-
 
     #myBtn {
       display: none;
