@@ -134,7 +134,9 @@ input[type=text]
             
         }
 
-       
+       fieldset{
+    padding: 20px;
+}
 
         form {
             overflow: auto;
@@ -345,8 +347,9 @@ function topFunction() {
      <label>Phone Number:</label>
      <input type="tel" name="phone" id="phone" required placeholder="Please enter your phone number ">
      <br><br>
-     <select name="select" class="select-field" style="height:2em;font-size:15px;outline:none;text-indent:1%;border-style:none;border-radius:10px ;border:2px solid #18121e; margin-left:3%;">
-                        <option value="Country">Country</option>
+     <label >Country:</label>
+     <select name="select" class="select-field" style="height:2em;font-size:15px;outline:none;width:100px;text-indent:1%;border-style:none;border-radius:10px ;border:2px solid #18121e; margin-left:3%;">
+                        
                         <option value="Kosovo">Kosovo</option>
                         <option value="Albania">Albania</option>
                         <option value="France">France</option>
@@ -375,7 +378,14 @@ function topFunction() {
                              <br><br>
                             <label>Children</label>
                             <input type="number" name="children" min="0" max="3" />
-                         <br>
+                         <br><br>
+                         <label>Room Type:</label>
+                         <select name="roomtypes"  style="height:2em;font-size:15px;width:100px;outline:none;text-indent:1%;border-style:none;border-radius:10px ;border:2px solid #18121e; margin-left:3%;">
+                        <option value="Single">Single</option>
+                        <option value="Double">Double</option>
+                        <option value="Deluxe">Deluxe</option>
+                    </select>
+                          <br><br>
                         <p>Do you require meals?</p>
                         <br>
                         <input type="radio" name="meals" value="yesMeals">
@@ -388,11 +398,11 @@ function topFunction() {
                         <input type="checkbox" name="balcony" value="yes" checked>
                         <br><br>
 
-                        <input type="image" src="foto/submit.png" width="100px;" align="right">
-                        <div style="padding-bottom: 18px;">Questions / Comments<br/>
+
+                     <div style="padding-bottom: 18px;">Questions / Comments<br/>
 <textarea id="data_10" false name="data_10" style="width : 450px;" rows="6" class="form-control"></textarea>
 </div>
-
+  <input type="image" src="foto/submit.png" width="100px;" align="bottom">
 
     </fieldset></form></article>
 
