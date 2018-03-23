@@ -9,266 +9,264 @@
     <script src="jquery-1.11.2.min.js"></script>
 
 
-<style>
-/*------------------------------------------*/
-header {
-    background-color: RGB(0,0,0);
-    background-attachment: fixed;
-    min-width:84em;
-    min-height: 10em;
-}
-label
-{
-    width: 100px;
-    display: inline-block;
-}
-form{
-  min-width:500px;
-}
-input[type=text]
-{
-    display: inline-block;
-}
-#imgheader{
-  height:30%;
-  width:30%;
-  text-align:center;
+    <style>
+        /*------------------------------------------*/
+        header {
+            background-color: RGB(0,0,0);
+            background-attachment: fixed;
+            min-width: 84em;
+            min-height: 10em;
+        }
 
-}
+        #imgheader {
+            height: 30%;
+            width: 30%;
+            text-align: center;
+        }
 
+        /*Pjesa e logos se faqes per pjesen lart*/
+        img {
+            height: 120px;
+            width: 100px;
+            max-width: 100%;
+            image-orientation: inherit;
+        }
+        /*Ju jep keto karakteristika te gjitha elementeve*/
+        * {
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+        }
+        /*--------------------------------------------*/
+        /*CSS per pjesen e menu-se*/
+        nav {
+            min-width: 84em;
+            margin: 0 0 0 0;
+            font-family: Arial;
+            font-size: 100%;
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            min-height: 2.25em;
+        }
 
-/*Pjesa e logos se faqes per pjesen lart*/
-img {
-    height: 120px;
-    width: 100px;
-    max-width: 100%;
-    image-orientation: inherit;
-}
- /*Ju jep keto karakteristika te gjitha elementeve*/
-* {
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-}
-/*--------------------------------------------*/
-/*CSS per pjesen e menu-se*/
-nav {min-width:84em;
-    margin: 0 0 0 0;
-    font-family: Arial;
-    font-size: 100%;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    min-height:2.25em;
-     
-}
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #232323;
+                text-align: center;
+                vertical-align: top;
+                min-height: 2.25em;
+            }
 
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #232323;
-        text-align: center;
-        vertical-align: top;
-        min-height:2.25em;
-    }
+        #nav li {
+            display: inline-block;
+            border-right: 2px solid;
+            border-right-color: #3CC47C;
+        }
 
-#nav li {
-    display: inline-block;
-    border-right: 2px solid;
-    border-right-color: #3CC47C;
-}
-
-#nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    width: 100px;
-    padding: 10px;
-    text-decoration: none;
-      margin-left:-0.3em;
-}
+        #nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            width: 100px;
+            padding: 10px;
+            text-decoration: none;
+            margin-left: -0.3em;
+        }
 
 
-#nav li a:hover[href="camp.html"]{
+        #nav li a:hover[href="Bistro.html"] {
+            background-color: #A0522D;
+        }
 
-  background-color: #A0522D;
-}
-#nav li a:hover[href="hike.html"]{
-opacity:0.9;
-  background-color: #86B404;
-  margin-left:0;
-}
-#nav li a[href="hike.html"]{
-  margin-left:0;
-}
-#nav li a[href="cycle.html"]{
-opacity:0.9;
-  background-color: #088A4B ;
-}
-#nav li a:hover[href="Experience.html"]{
-opacity:0.9;
-  background-color:  #2E9AFE;
-}
-#nav li a:hover[href="surf.html"]{
-opacity:0.9;
-  background-color:#04B4AE;
-}
-#nav li a:hover[href="scuba.html"]{
-opacity:0.9;
-  background-color:#2ECCFA;
-}
-#nav li a:hover[href="Game.html"]{
-    background-color:rgb(71, 71, 90);
-}
+        #nav li a:hover[href="Rooms.html"] {
+            opacity: 0.9;
+            background-color: #86B404;
+            margin-left: 0;
+        }
 
+        #nav li a[href="Rooms.html"] {
+            margin-left: 0;
+        }
 
-form {
-    overflow: auto;
-    padding: 0;
-}
-/*Vija ne anen e majte te femijes se pare*/
-#nav li:first-child {
-    border-left: 2px solid;
-    border-left-color: #3CC47C;
-}
-    /*Vija ne elementin e fundit te listes te mos shfaqet*/
-#nav li:last-child {
-    border-right: none;
-}
+        #nav li a:hover[href="Booking.html"] {
+            opacity: 0.9;
+            background-color: #088A4B;
+        }
 
+        #nav li a:hover[href="Contact.html"] {
+            opacity: 0.9;
+            background-color: #2E9AFE;
+        }
 
-   
+        #nav li a:hover[href="Conference.html"] {
+            opacity: 0.9;
+            background-color: #04B4AE;
+        }
 
-/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+        #nav li a[href="Tours.html"] {
+            opacity: 0.9;
+            background-color: rgb(67, 178, 223);
+            
+        }
 
-/*Vendosja e lartesise, gjatesise, pozicionimi, ngjyra e fontit, largesia nga top dhe z-index(pozicionimi ne raport me div elementet tjera)  */
-footer
-{
-background-color: rgb(35,35,35);
-position:relative;
-width:100%;
-color:white;
-z-index:-1;
-min-width:84em;
-float:left;
+       
 
-}
-
-#imglogo1
-{
-height:100%;
-width:100%;
-}
+        form {
+            overflow: auto;
+            padding: 0;
+        }
+        /*Vija ne anen e majte te femijes se pare*/
+        #nav li:first-child {
+            border-left: 2px solid;
+            border-left-color: #3CC47C;
+        }
+        /*Vija ne elementin e fundit te listes te mos shfaqet*/
+        #nav li:last-child {
+            border-right: none;
+        }
 
 
-/*Div elementi qe duket si vije vertikale per ndarje te te dhenave(footer)*/
-.vertical
-{
-height:10em;
-
-margin-top:4.5%;
-border-left:3px solid lightblue;
-float:left;
-margin-left:6%;
-}
-
-/*Div element ne te cilin eshte vendosur llogo(footer)*/
-#logo1
-{
-float:left;
-margin-left: 5%;
-margin-top: 6.9%;
-width:20%;
-}
-.tabela123{
-    font-size:100%;
-   width:100%;
-}
-
-#myBtn {
-  display: none;
-  position: fixed;
-  z-index: 99;
-  height:25px;
-  width:25px;
-  cursor: pointer;
-  background: URL('Foto/TopPage.png') no-repeat;
-  background-size: 25px,25px;
-  bottom: 5%;
-  right: 2%;
-  transform: scale(2,2);
-}
-#myBtn:hover{
-  opacity:0.8;
-}
-
-/*Div element per homeButton*/
-#homeButton
-{
-position: fixed;
-  bottom: 3%;
-  left: 1%;
-}
-#homeButton:hover{
-  opacity:0.8;
-}
-
-.dropdown {
-width:25%;
-position: relative;
-display: block;
-}
-.drop {
-    padding:3%;
-    margin-left:0;
-    margin-top:0%;
-    cursor: pointer;
-    height:100%;
-    width:100%;
-
-}
-.dropdown:hover {
-display: block;
-height:150%;
-width:360%;
-margin-left:-33%;
-}
-.dropdown:hover {
-display: block;
-height:150%;
-width:360%;
-margin-left:-33%;
-}
-
-*{
-font-family:'Trebuchet ms'
-}
-nav ul li form input[type = text]{
-
-  padding-left: 0;
-  opacity: 0.8;
-}
-nav ul li form input[type = text]:focus{
-
-  padding-left: 0;
-  opacity: 1;
-}
+        /*---------------------------------------------------------------------------------*/
+        /*---------------------------------------------------------------------------------*/
+        /*elementet paraqiten horizontalisht */
+        .main-banner {
+            display: flex;
+        }
+        /*Fotoja*/
+        .main-banner {
+            background: url("Foto/Toursdiving_1.jpeg");
+            background-size: 100% 100%;
+            min-height: 100%;
+            height: 100%;
+            display: flex;
+            background-repeat: no-repeat;
+            z-index: 2;
+            min-width: 100%;
+        }
 
 
 
+        /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@font-face {
-    font-family: myFirstFont;
-    src: url(fonts/Poly-Regular.ttf);
-    
-}
-h3{
-    font-family: myFirstFont;
-    font-weight: bold;
-}
-</style>
+        /*Vendosja e lartesise, gjatesise, pozicionimi, ngjyra e fontit, largesia nga top dhe z-index(pozicionimi ne raport me div elementet tjera)  */
+        footer {
+            background-color: rgb(35,35,35);
+            position: relative;
+            width: 100%;
+            color: white;
+            z-index: -1;
+            min-width: 84em;
+            float: left;
+            z-index: 2;
+        }
+
+        #imglogo1 {
+            height: 100%;
+            width: 100%;
+        }
+
+
+        /*Div elementi qe duket si vije vertikale per ndarje te te dhenave(footer)*/
+        .vertical {
+            height: 10em;
+            margin-top: 4.5%;
+            border-left: 3px solid lightblue;
+            float: left;
+            margin-left: 6%;
+        }
+
+        /*Div element ne te cilin eshte vendosur llogo(footer)*/
+        #logo1 {
+            float: left;
+            margin-left: 5%;
+            margin-top: 6.9%;
+            width: 20%;
+        }
+
+       
+
+        * {
+            font-family: 'Trebuchet ms'
+        }
+
+        nav ul li form input[type = text] {
+            padding-left: 0;
+            opacity: 0.8;
+        }
+
+            nav ul li form input[type = text]:focus {
+                padding-left: 0;
+                opacity: 1;
+            }
+
+        mark {
+            background-color: lightblue;
+            color: Black;
+        }
+
+        #div1, #div2 {
+            transform: translate(-5%,-30%);
+            float: left;
+            background-color: rgb(67, 178, 223);
+            width: 100px;
+            height: 7.5em;
+            margin: 10px;
+            padding: 0px;
+            border: 1px solid black;
+            float: left;
+            margin-top: 3%;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            z-index: 99;
+            height: 25px;
+            width: 25px;
+            cursor: pointer;
+            background: URL('Foto/TopPage.png') no-repeat;
+            background-size: 25px,25px;
+            bottom: 5%;
+            right: 2%;
+            transform: scale(2,2);
+        }
+
+            #myBtn:hover {
+                opacity: 0.8;
+            }
+
+        /*Div element per homeButton*/
+        #homeButton {
+            position: fixed;
+            bottom: 3%;
+            left: 1%;
+            z-index: 2;
+        }
+
+            #homeButton:hover {
+                opacity: 0.8;
+            }
+
+        mark {
+            background-color: lightblue;
+            color: Black;
+        }
+
+        #buton123 {
+            width: 100%;
+            background: url("Foto/giphy4.gif") 70% 40% no-repeat;
+            border: none;
+            background-size: 100%;
+            border-radius: 2px;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+
 <script>
 // Kur scroll posht 135 px vendose butonin TOP
 window.onscroll = function() {scrollFunction()};
@@ -298,29 +296,27 @@ function topFunction() {
 
  </header>
  <nav>
-        <ul id="nav">
+    <ul id="nav">
 
-            <li><a href="hike.html">Hiking</a></li>
-            <li><a href="surf.html">Surfing</a></li>
-            <li><a href="scuba.html">Scuba Diving</a></li>
-            <li><a href="camp.html">Camping</a></li>
-            <li><a href="cycle.html">Booking</a></li>
-             <li><a href="Experience.html" id="exp">Experiences</a></li>
+        <li><a href="Rooms.html">Rooms</a></li>
+        <li><a href="Conference.html">Conference</a></li>
+        <li><a href="Tours.html">Tours</a></li>
+        <li><a href="Bistro.html">Bistro</a></li>
+        <li><a href="Booking.html">Booking</a></li>
+        <li><a href="Contact.html" id="exp">Contact</a></li> 
          
 
-            <li>
+        <li>
 
-              <li style="vertical-align:middle;">
+          <li style="vertical-align:middle;">
 
-
-                              <form action="https://www.google.com" method="GET" target="_blank" style="border-radius:2px;background-color:#314a37;padding:4px; ">
-                                  <input type="text" placeholder="Search Location" name="q" style=" line-height: 22px;border:none;border-radius:2px;font-family:sans-serif;font-style: normal;">
-                                  <input type="submit" value="Submit"; style=" box-shadow:1px 1px 0 #677B66;border:none; background: #C1DEC0;line-height:22px;cursor: pointer;border-radius:2px;font-family:sans-serif;font-style: normal;">
-                              </form>
-              </li>
-        </ul>
-    </nav>
-
+                          <form action="https://www.google.com" method="GET" target="_blank" style=" border-radius:2px;background-color:#314a37;padding:4px; ">
+                              <input type="text" placeholder="Search Location" name="q" style=" line-height: 22px;border:none;  cursor: pointer;border-radius:2px;font-family:sans-serif;font-style: normal;">
+                              <input type="submit" value="Submit"; style=" box-shadow:1px 1px 0 #677B66;border:none; background: #C1DEC0;line-height:22px;  cursor: pointer;border-radius:2px;font-family:sans-serif;font-style: normal;">
+                          </form>
+          </li>
+    </ul>
+</nav>
     
     <div style=" min-width:84em; float:left;  width:100%;"> <!-- Per mos mu nda qajo pjesa nalt kur e resize browser-->
         
