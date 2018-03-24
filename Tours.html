@@ -163,6 +163,17 @@
             min-width: 100%;
         }
 
+ #tabela {margin-left:1%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 85%;
+}
+
+#tabela td, #tabela th {
+    border: 1px solid rgb(67, 178, 223);
+    text-align: left;
+    padding: 8px;
+}
 
 
         /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -289,8 +300,12 @@ align-items: center;
 /*margin-left: 20%;
 min-width: 1000px;*/
 width: 100%;
-margin-left: 12%;
+margin-left: 13.3%;
 align-items:center;
+margin-top:4%;
+margin-bottom: 4%;
+margin-right:4%;
+font-family: 'Times New Roman', Times, serif;
 
  /*vetem fotoja */   
 }
@@ -323,16 +338,6 @@ padding-top: 5px;
 
 
 
-#listajoerenditur{
-font-family:'Times New Roman';
-color: black; 
-text-align:center;
-float: bottom;
- clear: both;
- font-size: 20px;
- display: block;
-
-}
 
 
 
@@ -429,16 +434,6 @@ float: bottom;
         </div>
 
 
-        <!--lista jo e renditur pas fotos se pare -->
-          <ul id="listajoerenditur">
-<!--CLEAR says that in addition to inserting a line break, if there is a picture or other object to the right or left, go past that too in HTML.-->
-    Tour time
-    <li><pre>08:00-11:00      <b>   Lucerne Lake</b></pre></li>
-    <li><pre>11:30-14:00      <b>   Mount Rigi</b></pre></li>
-    <li><pre>14:30-16:00      <b>   Chapel Bridge</b></pre></li>
-    <li><pre>16:30-18:00      <b>   The Lion of Luzerne</b></pre></li>
-    <li><pre>19:00-21:00      <b>   Old Town Lucerne</b> </pre></li>
-   </ul>
         
         <div class="perp">
         <div class="fotoja">
@@ -446,7 +441,7 @@ float: bottom;
         </div>
         <div id="teksti">
         <h2>Chapel Brigde</h2>
-        <p>The medieval <b>Chapel Bridge</b>, or rather its replacement, is probably the most photographed site in Lucerne. The landmark bridge was built in the 14th century and, until it burned in 1993, was considered the oldest wooden bridge in Europe. The bridge was promptly rebuilt and is as picturesque as ever. The restored bridge features more than 100 pictures of Lucerne life in the 17th century hanging from the rafters. These pictures also include patron saints. The covered bridge crosses the River Reuss diagonally. Named for nearby St. Peter’s Chapel, the bridge also is known as Kapellbrücke.
+        <p>The medieval <b>Chapel Bridge</b>, or rather its replacement, is probably the most photographed site in Lucerne. The landmark bridge was built in the 14th century and, until it burned in 1993, was considered the oldest wooden bridge in Europe. The bridge was promptly rebuilt and is as picturesque as ever. The restored bridge features more than 100 pictures of Lucerne life in the 17th century hanging from the rafters. These pictures also include patron saints.The covered bridge crosses the River Reuss diagonally. Named for nearby St.Peter’s Chapel, the bridge also is known as Kapellbrücke.
         </p>
         </div>
         </div>
@@ -477,51 +472,35 @@ float: bottom;
         </div>
         
 
-
-
-       
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div style="margin-left:13%;
+    margin-bottom: 4%;">
+  <table cellpadding="23" id='tabela'>
+    <tr style="background-color: rgb(67, 178, 223);border: 1px solid rgb(67, 178, 223); ">
+      <th>Tour Time</th>
+      <th>Location</th>
+    </tr>
+    <tr>
+      <td>08:00-11:00</td>
+      <td>Lucerne Lake</td>
+    </tr>
+    <tr>
+      <td>11:30-14:00 </td>
+      <td>Mount Rigi</td>
+    </tr>
+    <tr>
+      <td>14:30-16:00</td>
+      <td>Chapel Bridge</td>
+    </tr>
+    <tr>
+      <td>16:30-18:00</td>
+      <td>The Lion of Luzerne</td>
+    </tr>
+    <tr>
+      <td>19:00-21:00</td>
+      <td>Old Town Lucerne</td>
+    </tr>
+  </table>
+</div>
 
         <footer>
             <div id="logo1" style="margin-bottom:5%;">
