@@ -12,11 +12,17 @@
 $(document).ready(function(){
     $(".clicktips").click(function(){
         $(".tipsid").slideToggle("slow");
+
     });
 });
 $(document).ready(function(){
     $(".clicktips1").click(function(){
         $(".tipsid1").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $(".clicktips2").click(function(){
+        $(".tipsid2").slideToggle("slow");
     });
 });
 </script> 
@@ -136,12 +142,12 @@ form {
 
 
    /*---------------------------------------------------------------------------------*/
-	 /*---------------------------------------------------------------------------------*/
-	  /*elementet paraqiten horizontalisht */
+   /*---------------------------------------------------------------------------------*/
+    /*elementet paraqiten horizontalisht */
       .main-banner {
         display: flex;
     }
-	 
+   
 
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -230,50 +236,59 @@ nav ul li form input[type = text]:focus{
   opacity: 1;
 }
 .tipsid, .clicktips {
-    background-color: #A0522D;
+    background-color:  rgba(200,180,192,0.4);
     border: none;
-    height:10%;
+  
     width:95%;
     margin-left:2%;
-	
+  
 }
 
 
 .tipsid {
     margin-left:2%;
-    background-color:rgb(153, 100, 75);
+    background:url(images/breakfast.jpg);
     display: none;
     border-radius:1%;
     width:95%;
-	margin-top:-3.8%;
+    color: white;
+    height: 500px;
+  margin-top:-3.8%;
 }
-.tipsid1, .clicktips1 {
-    background-color: #A0522D;
+ .clicktips1,.clicktips2 {
+    background-color: rgba(200,180,192,0.4);
     border: none;
     height:10%;
     width:95%;
     margin-left:2%;
-	
+  
 }
-
-
 .tipsid1 {
+  background:url(images/dinne.jpg);
     margin-left:2%;
     display: none;
     border-radius:1%;
     width:95%;
-	margin-top:-3.8%;
+  margin-top:-3.8%;
+}
+.tipsid2 {
+  background:url(images/cake.jpg);
+    margin-left:2%;
+    display: none;
+    border-radius:1%;
+    width:95%;
+  margin-top:-3.8%;
 }
 #test div
 {
-	position:relative;
-	width:400px;
-	height:350px;
-	text-align:center;
-	transform:translateX(100%);
-	animation: test 10s ease-out infinite;
-	float:left;
-	margin-left:-30%;
+  position:relative;
+  width:400px;
+  height:350px;
+  text-align:center;
+  transform:translateX(100%);
+  animation: test 10s ease-out infinite;
+  float:left;
+  margin-left:-30%;
 
 }
 
@@ -287,9 +302,9 @@ nav ul li form input[type = text]:focus{
 100% {background-image:url("keyframe/v12.jpg");left:0px;top:0px;}
 }
 #test div:hover{
-		-webkit-animation-play-state: paused;
-		animation-play-state: paused;
-		border-radius: 10%;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    border-radius: 10%;
 }
 
 
@@ -304,13 +319,12 @@ nav ul li form input[type = text]:focus{
 }
 #main-section
 {
-  float: left;
+ float: left;
  margin: 5%;
- margin-right: 0%;
- margin-left: 15%;
- width: 40%;
+ width: 50%;
  height: 100%;
- padding: 5%;
+ padding: 1%;
+ margin-left:14%;
 
 color:white;
 font:tahoma;
@@ -339,13 +353,14 @@ aside
 }
 #asideofarticle
 {
-
-   background-color: red;
+    background-color: red;
   float: right;
-  width: 20%;
-  margin-top: 5%;
-  margin-right:9%;
-  padding: 2%;
+  width: 15%;
+  height:51em;
+  margin-top: 5.5%;
+  margin-right:0%;
+  margin-left:1%;
+  padding: 1%;
   border-radius: 15px;
   color:white;
   background-color: rgba(200,180,192,0.4);
@@ -358,8 +373,8 @@ img
  }
  #imgshefi
  {
-  width: 80%;
-  height: 80%;
+  width: 88%;
+  height: 60%;
 margin-top: 20%;
 
  }
@@ -368,7 +383,7 @@ margin-top: 20%;
   margin-top: 20%;
  
    width: 88%;
-  height: 88%;
+  height: 60%;
 }
 #paragrafetanash
 {
@@ -453,8 +468,8 @@ function topFunction() {
                </aside  > 
 
        </div>
-       <div>
-       <aside  id="asideofarticle" > 
+       <div style="margin-right: 13%; margin-left:0%;">
+       <aside id="asideofarticle" > 
        
             <h4 align="center"> Book table </h4>
             <p id="paragrafetanash"> Book table in our online booking   system </p>
@@ -472,7 +487,7 @@ Rival voucher is the perfect gift to your friend, colluege or lover</P>
 
                          <p id="paragrafetanash">  +46 (0)8-545 789 17 </p>
             
-             </aside >  
+             </aside>  
              </div>
       </section>
 
@@ -487,46 +502,90 @@ Rival voucher is the perfect gift to your friend, colluege or lover</P>
 </p>
         <br />
         
-<pre class="clicktips"  style="border-radius:5px;height:50px;text-align:center;cursor:pointer;">
+        <style type="text/css">
+          
+    .outdoor{
+        max-width: 390px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 1px solid white;
+        border-radius: .5em;
+        
+    }
+        </style>
+<pre class="clicktips"  style="border-radius:5px;height:50px;text-align:center;cursor:pointer;color: black;">
    
-   10 CAMPING Tips </pre>
-   <pre class="tipsid" >
-  
-  
+  <b>Breakfast Menu </b></pre>
+   <pre class="tipsid" style="background:url(images/breakfast.jpg);">
+  <center>
+ <ul class="outdoor" style="text-align: center; list-style:none;">
+  <li>Apple and Cheddar Tartine</li>
+  <li>Oatmeal With Apricots and Raisins</li>
+  <li>Mushroom and Egg White Omelet</li>
+  <li>Waffles With Nut Butter and Bananas</li>
+  <li>Scrambled Egg Tacos</li>
+  <li>Toast With Yogurt and Smoked Salmon</li>
+  <li>Yogurt With Grapes and Granola</li>
+  <li>French Toast With Raspberry Syrup</li>
 
+ </ul>
+</center>
    
   
 
    </pre>
     <pre class="clicktips1"  style="border-radius:5px;height:50px;text-align:center;cursor:pointer;margin-top: 15px;">
    
-   Top 6 best CAMPING routes</pre>
-   <pre class="tipsid1" style="height:450px;background-color:rgb(153, 100, 75)">
+   <b>Dark Menu</b></pre>
+   <pre class="tipsid1" style="height:650px;background-color:rgb(153, 100, 75)">
    <div id="test">
-      
-    </div>
-   </pre>
+        
+  <center>
+ <ul class="outdoor" style="text-align: center; list-style:none; color: white;">
+  <li>Taco De Pescado</li>
+  <li>Mussels  Frites</li>
+  <li>Crispy and Brussels Sprout Salad</li>
+  <li>Pizza</li>
+  <li>Smoked Brisket</li>
+  <li>Grande Salumi Formaggi Platter</li>
+  <li>Patatas Bravas</li>
+  <li>CHICKEN POT PIE</li>
+  <li>HOT TURKEY PLATE</li>
+  <li>FISH and CHIPS PLATE</li>
 
-
-    <pre class="clicktips1"  style="border-radius:5px;height:50px;text-align:center;cursor:pointer;margin-top: 15px;">
+ </ul>
+</center>
    
-   Top 6 best CAMPING routes</pre>
-   <pre class="tipsid1" style="height:450px;background-color:rgb(153, 100, 75)">
-   <div id="test">
-      
     </div>
    </pre>
-
-
-
-
-
         </pre>
-        </div>
-            
+        <pre class="clicktips2"  style="border-radius:5px;height:50px;text-align:center;cursor:pointer;margin-top: 15px;">
+   
+   <b>Desserts</b></pre>
+   <pre class="tipsid2" style="height:650px;background-color:rgb(153, 100, 75);background-size: 100%;">
+   <div id="test">
+      
+        <center>
+ <ul class="outdoor" style="text-align: center; list-style:none; color: white;">
+  <li>Raspberry-Rhubarb Pie</li>
+  <li>Walnut Brownies</li>
+  <li>Texas Sheet Cake</li>
+  <li>Espresso Crinkles</li>
+  <li>Vanilla Cheesecake </li>
+  <li>Tiramisu</li>
+  <li>Mint Oreo Cake</li>
+  <li>Chocolate Cake</li>
+  <li>Nutella Cake</li>
+  <li>Snickers Cake</li>
 
-	
-	</div>
+ </ul>
+</center>
+    </div>
+   </pre>
+
+        </div>
+
+
+  </div>
 
     <footer >
         <div id="logo1" style="margin-bottom:5%;">
@@ -535,7 +594,7 @@ Rival voucher is the perfect gift to your friend, colluege or lover</P>
  
         </div>
 
-        <div class="vertical" >	</div>
+        <div class="vertical" > </div>
 
     <div style="margin-left: 6%;margin-top:5.3%; float:left;text-align:center; width:11%;margin-bottom:2%;">
 
@@ -554,7 +613,7 @@ Rival voucher is the perfect gift to your friend, colluege or lover</P>
 
                     <b>Follow us:</b>
 
-                </div>
+                </div>-
 
             <br>
 
@@ -623,17 +682,17 @@ Rival voucher is the perfect gift to your friend, colluege or lover</P>
       </footer>
 
 
-  	<div id="homeButton">
-  					<div>
-  							<a href="index.html">
-  								<img src="Foto/homeButton.png" style="height:50px; width:50px" title="Home">
-  							</a>
-  					</div>
-  	</div>
+    <div id="homeButton">
+            <div>
+                <a href="index.html">
+                  <img src="Foto/homeButton.png" style="height:50px; width:50px" title="Home">
+                </a>
+            </div>
+    </div>
 
 <a onclick="topFunction()" id="myBtn" title="Top"  ></a>
 
-  	</body>
+    </body>
 
 
 
