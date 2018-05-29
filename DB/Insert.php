@@ -33,18 +33,19 @@ $conn = new mysqli ($dbHost, $dbUser, $dbPass, $dbName);
          die("Failed to connect!!". $conn.connect_error);
      }
 
-$username = trim($_POST['name']);
-$Emri = trim($_POST['firstname']);
-$Mbiemri = trim($_POST['lastname']);
-$Email= trim($_POST['email']);
-$Phone = trim($_POST['phone']); 
-$Country = trim($_POST['select']);
-$Arrivaldate=trim($_POST['date']);
-$Untildate=trim($_POST['until']);
-$Adults=trim($_POST['adults']);
-$Children=trim($_POST['children']);
-$Roomtype=trim($_POST['roomtypes']);
-$Meals=trim($_POST['meals']);
+$username =mysqli_real_escape_string($conn,trim($_POST['name'])) ;
+$Emri = mysqli_real_escape_string($conn,trim($_POST['firstname']));
+$Mbiemri = mysqli_real_escape_string($conn,trim($_POST['lastname']));
+$Email=mysqli_real_escape_string($conn,trim($_POST['email'])) ;
+$Phone =mysqli_real_escape_string($conn,trim($_POST['phone'])) ; 
+$Country = mysqli_real_escape_string($conn,trim($_POST['select']));
+$Arrivaldate=mysqli_real_escape_string($conn,trim($_POST['date']));
+$Untildate=mysqli_real_escape_string($conn,trim($_POST['until']));
+$Adults=mysqli_real_escape_string($conn,trim($_POST['adults']));
+$Children=mysqli_real_escape_string($conn,trim($_POST['children']));
+$Roomtype=mysqli_real_escape_string($conn,trim($_POST['roomtypes']));
+$Meals=mysqli_real_escape_string($conn,trim($_POST['meals']));
+
 if (isset($_POST['balcony'])) {
     $Balcony = "Yes";
   } else {
@@ -62,8 +63,12 @@ $Questions=trim($_POST['data_10']);
          echo "<p id='sus'style='text-align:left;'> Booking's list:</p>";
      }
 
+     $stmt=$conn->prepare('SELECT Username, Emri, Mbiemri, Email FROM Reservations WHERE Username=?');
+     $stmt->bind_param('s',$username);
+     $stmt->execute();
 
-      $sql = "SELECT Username, Emri, Mbiemri, Email FROM Reservations";
+     $res=$stmt->get_result();
+
       echo "<table id='guestsTab'>";
       
       echo "<tr>";
@@ -75,12 +80,10 @@ $Questions=trim($_POST['data_10']);
 
       echo "</tr>";
 
-      if($res = mysqli_query($conn, $sql)){
+     
       
           if(mysqli_num_rows($res) > 0){
-      
-            
-              while($row = mysqli_fetch_array($res)){
+              while($row = $res->fetch_assoc()){
       
                   echo "<tr>";
                       echo "<td>" . $row['Username'] . "</td>";
@@ -93,15 +96,10 @@ $Questions=trim($_POST['data_10']);
       
               echo "</table>";
       
-      
           } 
       
-      } 
-      else{
-      
-          echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
-      
-      }
+   
+     
    
 ?>
 </div>
