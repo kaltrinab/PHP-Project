@@ -359,7 +359,7 @@ input[type=text]
 
 
 
-<form id="frmBooking" action="DB/Insert.php"  method="POST"><fieldset>
+<form id="frmBooking" action=" try {DB/Insert.php} catch(Exception $e) {echo 'Message: ' .$e->getMessage();}"  method="POST"><fieldset>
     
     <legend><?php  $text="Personal details:"; echo $text;    ?></legend>
     <br><br>
