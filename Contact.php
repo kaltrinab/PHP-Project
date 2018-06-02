@@ -27,21 +27,7 @@ $(document).ready(function(){
     <!--<script src="JScript.js"></script>-->
     <link rel="stylesheet" type="text/css" href="DB/Contact_style.css">
     <style>
-        #nav a {
-            display: block;
-            color: white;
-            text-align: center;
-            width: 100px;
-            padding: 10px;
-            text-decoration: none;
-            margin-left: -0.3em;
-        }
-
-        #nav li a[href="Contact.php"] {
-            opacity: 0.9;
-            background-color: #2E9AFE;
-        }
-
+       
         .forma {
             color: #0A68E4;
             display: flex;
@@ -258,35 +244,7 @@ function topFunction() {
 <body style="background-color:#ececec;">
    
 
-    <header>
-
-            <img src="Foto/impulse.png" id="imgheader" alt="Impulse" style="margin-top:1.5%;margin-bottom:1.5%;margin-left:34.9%"/>
-      
-    </header>
-    <nav>
-        <ul id="nav">
-
-            <li><a href="Rooms.php">Rooms</a></li>
-            <li><a href="Conference.php">Conference</a></li>
-            <li><a href="Tours.php">Tours</a></li>
-            <li><a href="Bistro.php">Bistro</a></li>
-            <li><a href="Booking.php">Booking</a></li>
-            <li><a href="Contact.php">Contact</a></li>
-            <li id="demo"><?php 
-        
-        echo "<a href='logout.php'>Logout</a>";
-?></li>
-            
-            <li>
-
-            <li style="vertical-align:middle;">
-                    <form action="https://www.google.com" method="GET" target="_blank" style="border-radius:2px;background-color:#314a37;padding:4px; ">
-                        <input type="text" placeholder="Search Location" name="q" style=" line-height: 22px;border:none;border-radius:2px;font-family:sans-serif;font-style: normal;"  autofocus>
-                        <input type="submit" value="Submit"; style=" box-shadow:1px 1px 0 #677B66;border:none; background: #C1DEC0;line-height:22px;cursor: pointer;border-radius:2px;font-family:sans-serif;font-style: normal;">
-                    </form>
-            </li>
-        </ul>
-    </nav>
+   <?php require("DB/header.php") ?>
 <?php
 
 class Person {
@@ -429,21 +387,66 @@ class Person {
 
 
 
+   <?php
+    require_once('db.php');
+    $error = "";
+    $color = "red";
+    if(isset($_POST['submit'])){
+        $name = mysqli_real_escape_string($con,$_POST['name']);
+        $email = mysqli_real_escape_string($con,$_POST['email']);
+        $phone = mysqli_real_escape_string($con,$_POST['phone']);
+        $message = mysqli_real_escape_string($con,$_POST['message']);
 
+        $q = "SELECT * FROM feedback ORDER BY feedback.id DESC LIMIT 1";
+        $r = mysqli_query($con, $q);
+        if(mysqli_num_rows($r) > 0){
+            $row = mysqli_fetch_array($r);
+            $id = $row['id'];
+            $id = $id + 1;
+        }
+        else{
+            $id = 1;
+        }
+
+
+        if(empty($name) or empty($email) or empty($phone) or empty($message)){
+            $error = "All Feilds Required, Try Again";
+
+        }
+        else{
+            $insert_query = "INSERT INTO `feedback`(`id`, `name`, `email`, `phone`, `message`) VALUES ('$id','$name','$email','$phone','$message')";
+            if(mysqli_query($con, $insert_query)){
+                $error = "We've got your feedback";
+                $color = "green";
+            }
+            else{
+                $error = "Error occured";
+            }
+        }
+    }
+
+?>
 
                 <form method="post"  id="forma1" action="" >
         
                     
                     <br/><br/>
-                  
+                       
+                  <input type="text" name="name" id="first" required="required" placeholder="Name"  style="height:2em;font-size:15px;width:60%;
+                               border-style:none;border-radius:10px ;border:2px solid #18121e; margin-left:15%">
+                    <br/><br/>
+
+                    <input type="tel" name="phone" id="first" required="required" placeholder="Phone"  style="height:2em;font-size:15px;width:60%;
+                               border-style:none;border-radius:10px ;border:2px solid #18121e; margin-left:15%">
+                    <br/><br/>
                     <input type="email"name="email" required="required" pattern="[a-zA-Z0-9]{0,20}@[a-zA-Z]{0,10}.[a-zA-Z]{0,3}"  name="email" autocomplete="on" placeholder="Email" style=" height:2em;width:60%;font-size:15px;
                                border-style:none;border-radius:10px ;border:2px solid #18121e; margin-left:15%">
                    
-                    <br/><br/><br/>
+                    <br/><br/>
                         <input type="password" name="password" id="first" required="required" placeholder="Password"  style="height:2em;font-size:15px;width:60%;
                                border-style:none;border-radius:10px ;border:2px solid #18121e; margin-left:15%">
                     <br/><br/>
-                    <input type="submit" value="Login" onclick="addItem()"name="login" style="border-type:outset;  margin-top:20%;margin-left:25%;margin-bottom:5%; width:20%;
+                    <input type="submit" value="Login" onclick="addItem()"name="login" style="border-type:outset;  margin-top:10%;margin-left:25%;margin-bottom:5%; width:20%;
                            height:40px;box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);border-radius:3px;outline:none;">
                     <input type="reset" value="Reset" name="Reset" style=" border-type:outset; margin-left:5%;margin-bottom:5%; width:20%;
                            height:40px;box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);border-radius:3px;outline:none;">
@@ -455,7 +458,7 @@ class Person {
 
 
             <div style="height:30em ; width:30em ;float:left; margin-top:-0.4%;margin-bottom:15%;">
-                <textarea cols="60" rows="3" placeholder="Share your experiences" style="margin-left:3%"></textarea>
+                <textarea cols="60" rows="3" placeholder="Share your experiences" name="message" style="margin-left:3%"></textarea>
                 
 
             </div>

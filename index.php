@@ -73,6 +73,7 @@ $(document).ready(function(){
                   <li><a href="Bistro.php">Bistro</a></li>
                   <li><a href="Booking.php">Booking</a></li>
                   <li><a href="Contact.php" id="exp">Contact</a></li>
+                  <li><a href="Admin.php">Admin</a></li>
                   <li> <?php 
         if(!isset($_SESSION['var'])){
             header("Location: Contact.php");

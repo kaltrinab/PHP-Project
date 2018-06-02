@@ -1,3 +1,55 @@
+<style>
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Vendosja e lartesise, gjatesise, pozicionimi, ngjyra e fontit, largesia nga top dhe z-index(pozicionimi ne raport me div elementet tjera)  */
+footer
+{
+background-color: rgb(35,35,35);
+position:relative;
+width:100%;
+color:white;
+z-index:-1;
+min-width:84em;
+float:left;
+
+}
+
+#imglogo1
+{
+height:100%;
+width:100%;
+}
+
+
+/*Div elementi qe duket si vije vertikale per ndarje te te dhenave(footer)*/
+.vertical
+{
+height:10em;
+
+margin-top:4.5%;
+border-left:3px solid lightblue;
+float:left;
+margin-left:6%;
+}
+
+/*Div element ne te cilin eshte vendosur llogo(footer)*/
+#logo1
+{
+float:left;
+margin-left: 5%;
+margin-top: 6.9%;
+width:20%;
+}
+ 
+
+
+
+</style>
+
+
+
 <footer >
         <div id="logo1" style="margin-bottom:5%;">
  
@@ -37,7 +89,52 @@
 <div class="vertical"></div>
 
 
+ <div id="123" style="margin-left:3%; margin-top:5.5%;float:left;width:42.5%;margin-bottom:1%;">
+    <?php
+    $contacts=array(
+                    array(
+                        "Name:"=>"Gresa Dodaj",
+                        "E-mail:"=>"gresadodaj@impulse.com",
+                    ),
+                    array(
+                        "Name:"=>"Kaltrina Bulliqi",
+                        "E-mail:"=>"kaltrinabulliqi@impulse.com",
+                    ),
+                    array(
+                        "Name:"=>"Mimoza Ajeti",
+                        "E-mail:"=>"mimozaajeti@impulse.com",
+                    ),
+                    array(
+                        "Name:"=>"Oriola Avdyli",
+                        "E-mail:"=>"oriolaavdyli@impulse.com",
+                    ),
+                    array(
+                        "Name:"=>"Nora Ibrahimi",
+                        "E-mail:"=>"noraibrahimi@impulse.com",
+                    )
+            );
+            rsort($contacts);
+            
+?>
+<table style="border-collapse: collapse;width:85%">
+<?php
+            
+            foreach ( $contacts as $contact ) {
 
+                echo "<tr >";
+              
+                foreach ( $contact as $key => $value ) {
+                  echo "<td style='padding:1%;color:rgb(107, 114, 112);font-family:arial;border:1px solid black;'>$value</td>";
+                }
+              
+                echo '</tr>';
+              }
+    
+    ?>
+            </table>
+
+
+</div>
             <div id="123" style="margin-left:3%; margin-top:3%;float:left;width:46%;margin-bottom:1%;">
              
         

@@ -36,125 +36,16 @@ $(document).ready(function(){
 });
 
 </script>
+</head>
 <style>
-/*------------------------------------------*/
-header {
-    background-color: RGB(0,0,0);
-    background-attachment: fixed;
-    min-width:84em;
-    min-height: 10em;
 
-}
-
-#imgheader{
-  height:30%;
-  width:30%;
-  text-align:center;
-
-}
-
-/*Pjesa e logos se faqes per pjesen lart*/
-img {
-    height: 120px;
-    width: 100px;
-    max-width: 100%;
-    image-orientation: inherit;
-}
- /*Ju jep keto karakteristika te gjitha elementeve*/
-* {
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-}
-/*--------------------------------------------*/
-/*CSS per pjesen e menu-se*/
-nav {min-width:84em;
-    margin: 0 0 0 0;
-    font-family: Arial;
-    font-size: 100%;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-     
-}
-
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #232323;
-        text-align: center;
-        vertical-align: top;
-    }
-
-#nav li {
-    display: inline-block;
-    border-right: 2px solid;
-    border-right-color: #3CC47C;
-}
-
-#nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    width: 100px;
-    padding: 10px;
-    text-decoration: none;
-      margin-left:-0.3em;
-}
-
-#nav li a:hover[href="Bistro.php"]{
-
-  background-color: #A0522D;
-}
-#nav li a:hover[href="Rooms.php"]{
-opacity:0.9;
-  background-color: #86B404;
-  margin-left:0;
-}
-#nav li a[href="Rooms.php"]{
-  margin-left:0;
-}
-#nav li a:hover[href="Booking.php"]{
-opacity:0.9;
-  background-color: #009c33;
-}
-#nav li a:hover[href="Contact.php"]{
-opacity:0.9;
-  background-color: #0066cc;
-}
-#nav li a[href="Conference.php"]{
-opacity:0.9;
-  background-color:#04B4AE;
-}
-#nav li a:hover[href="Tours.php"]{
-opacity:0.9;
-  background-color:#2ECCFA;
-}
 
 
 form {
     overflow: auto;
     padding: 0;
 }
-/*Vija ne anen e majte te femijes se pare*/
-#nav li:first-child {
-    border-left: 2px solid;
-    border-left-color: #3CC47C;
-}
-    /*Vija ne elementin e fundit te listes te mos shfaqet*/
-#nav li:last-child {
-    border-right: none;
-}
 
-
-   /*---------------------------------------------------------------------------------*/
-	 /*---------------------------------------------------------------------------------*/
-	  /*elementet paraqiten horizontalisht */
-      .main-banner {
-        display: flex;
-    }
 	  /*Fotoja*/
 	.main-banner {
         background: url("Foto/Conferenceing_1.jpg") ;
@@ -170,45 +61,6 @@ form {
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 
-/*Vendosja e lartesise, gjatesise, pozicionimi, ngjyra e fontit, largesia nga top dhe z-index(pozicionimi ne raport me div elementet tjera)  */
-footer
-{
-background-color: rgb(35,35,35);
-position:relative;
-width:100%;
-color:white;
-z-index:-1;
-min-width:84em;
-float:left;
-
-}
-
-#imglogo1
-{
-height:100%;
-width:100%;
-}
-
-
-/*Div elementi qe duket si vije vertikale per ndarje te te dhenave(footer)*/
-.vertical
-{
-height:10em;
-
-margin-top:4.5%;
-border-left:3px solid lightblue;
-float:left;
-margin-left:6%;
-}
-
-/*Div element ne te cilin eshte vendosur llogo(footer)*/
-#logo1
-{
-float:left;
-margin-left: 5%;
-margin-top: 6.9%;
-width:20%;
-}
 
 
 #myBtn {
@@ -363,9 +215,11 @@ margin-top: 2%;
  
 
 </style>
-<?php require("DB/header.php") ?>
-           
-    
+<body>
+
+<div class="header">
+<?php include 'DB\header.php';?>
+</div>
     
     
    
@@ -500,3 +354,4 @@ margin-top: 2%;
             
             </script>
 <?php require("DB/footer.php") ?>
+</body>
