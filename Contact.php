@@ -500,34 +500,20 @@ class Person {
             <div class="tipsid1">
             <br><br>
 
+<form method="post" action="">
+     <input type="text" name="name" required="required" autocomplete="off" maxlength="30" placeholder="Name" style="height:2em;font-size:15px;border-style:none;border-radius:10px ;width:22%;border: 2px solid #18121e; margin-left:3%;padding-left:4%;" >
+         <br></br>
+     <input type="text" name="surname" autocomplete="off"  placeholder="Surname"  style=" height:2em;font-size:15px;width:22%;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
+         <div style="float:right;margin-right:10%;width:50%;height:30%;">
+         <img  src="Foto/impulse_LOGO.png" style="height:100%;width:100%;">
+        </div>
+        </br></br>
+      <input type="email"  pattern="[a-zA-Z0-9]{0,20}@[a-zA-Z]{0,10}.[a-zA-Z]{0,3}"  name="email" autocomplete="on" placeholder="Email"  style=" height:2em;width:22%;font-size:15px;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
+        <br/><br/>
+      <input type="password" name="password" pattern="\S{8,16}$" required="required" placeholder="Password" style=" height:2em;font-size:15px;width:22%; border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
+         </br></br>
+      <input id="repeat" required  type="password" name="repeatpassword" placeholder="Repeat password" style="height:2em;font-size:15px;width:22%;padding-left:4%; border-style:none;border-radius:10px ;border:2px solid #18121e; margin-left:3%" />
             
-
-                   <form method="post" action="">
-                   <input type="text" name="name" required="required" autocomplete="off" maxlength="30" placeholder="Name" style="height:2em;font-size:15px;border-style:none;
-                                                                                     border-radius:10px ;width:22%;border: 2px solid #18121e; margin-left:3%;padding-left:4%;" >
-                   
-                                                            
-                 
-                   <br></br>
-               <input type="text" name="surname" autocomplete="off"  placeholder="Surname"  style=" height:2em;font-size:15px;width:22%;
-                                                                         border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
-              <div style="float:right;margin-right:10%;width:50%;height:30%;">
-               <img  src="Foto/impulse_LOGO.png" style="height:100%;width:100%;">
-             </div>
-                                                                            
-                     </br></br>
-                     <input type="email"  pattern="[a-zA-Z0-9]{0,20}@[a-zA-Z]{0,10}.[a-zA-Z]{0,3}"  name="email" autocomplete="on" placeholder="Email"  style=" height:2em;width:22%;font-size:15px;
-                                                                                           border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
-                                                                                                                                                              </br></br>
-
-
-                   <input type="password" name="password" pattern="\S{8,16}$" required="required" placeholder="Password" style=" height:2em;font-size:15px;width:22%;
-                                                                                               border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
-               </br></br>
-               <label>
-                    <input id="repeat" required  type="password" name="repeatpassword" placeholder="Repeat password" style="height:2em;font-size:15px;width:22%;
-                      padding-left:4%; border-style:none;border-radius:10px ;border:2px solid #18121e; margin-left:3%" />
-                </label>
                 <br /><br />
                 <input type="file" name="img"  value="Choose Photo" multiple style="margin-left:3%;">
                 <br></br>
@@ -546,10 +532,8 @@ class Person {
                      <input type="radio" name="gender" value="Female"  style="margin-left:3%;width: 20px;height: 20px;"> Female</br>
                <br>
          </br><br>
-         <input type="submit" value="Sign up" name="Submit" formmethod="post" formtarget="_blank"  style=" border-type:outset; margin-left:5%;margin-bottom:5%; width:20%;border-radius:3px;outline:none;
-                                                                 height:40px;box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75)">
-          <input type="reset" value="Reset" name="Reset"    style=" border-type:outset; margin-left:5%;margin-bottom:5%; width:20%;border-radius:3px;outline:none;
-                                                                 height:40px;box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75)">
+         <input type="submit" value="Sign up" name="Submit" formmethod="post" formtarget="_blank"  style=" border-type:outset; margin-left:5%;margin-bottom:5%; width:20%;border-radius:3px;outline:none; height:40px;box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75)">
+          <input type="reset" value="Reset" name="Reset"    style=" border-type:outset; margin-left:5%;margin-bottom:5%; width:20%;border-radius:3px;outline:none;  height:40px;box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75)">
                  <br>
              </form>
                
