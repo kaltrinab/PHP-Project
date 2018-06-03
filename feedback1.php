@@ -4,9 +4,11 @@
     <title></title>
 
     <style type="text/css">
-    * {
-    box-sizing: border-box;
-}
+  
+        * {
+            font-family: 'Trebuchet ms'
+        }
+
 
 #name,#phone,#email, select, textarea {
     width: 70%;

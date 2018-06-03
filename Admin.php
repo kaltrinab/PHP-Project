@@ -29,9 +29,10 @@ if(isset($_POST['submit'])){
 
 <style type="text/css">
    
-    * {
-    box-sizing: border-box;
-}
+  
+        * {
+            font-family: 'Trebuchet ms'
+        }
 
 #inputEmail,#inputPassword{
     width: 50%;
