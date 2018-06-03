@@ -292,13 +292,6 @@ function topFunction() {
             <li><a href="Contact.php">Contact</a></li>
             <li><a href="feedback1.php">Feedback</a></li>
             <li><a href="Admin.php">Admin</a></li>
-            <li id="demo"><?php 
-        
-        echo "<a href='logout.php'>Logout</a>";
-         ?></li>
-            
-            <li>
-
             <li style="vertical-align:middle;">
                     <form action="https://www.google.com" method="GET" target="_blank" style="border-radius:2px;background-color:#314a37;padding:4px; ">
                         <input type="text" placeholder="Search Location" name="q" style=" line-height: 22px;border:none;border-radius:2px;font-family:sans-serif;font-style: normal;"  autofocus>
