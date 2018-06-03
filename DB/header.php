@@ -29,26 +29,26 @@ function topFunction() {
         } 
 
         .hi{
-		background:url('Fotot/img1.jpg');
-		background-repeat:no-repeat;
-		background-size:100% 100%;
-	    width:100%;
-		height:100%;
-	}
+        background:url('Fotot/img1.jpg');
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+        width:100%;
+        height:100%;
+    }
   .hi1{
-  		background:url('Fotot/img2.jpg');
-  		background-repeat:no-repeat;
-  		background-size:100% 100%;
-  	    width:100%;
-  		height:100%;
-  	}
+        background:url('Fotot/img2.jpg');
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+        width:100%;
+        height:100%;
+    }
       .hi2{
-  		background:url('Fotot/img3.jpg');
-  		background-repeat:no-repeat;
-  		background-size:100% 100%;
-  	    width:100%;
-  		height:100%;
-  	}
+        background:url('Fotot/img3.jpg');
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+        width:100%;
+        height:100%;
+    }
 
 
       
@@ -152,10 +152,10 @@ input[type=text]
             margin-left: 0;
         }
 
-        #nav li a[href="Booking.php"] {
+        #nav li a:hover[href="Booking.php"] {
             opacity: 0.9;
             background-color: #088A4B;
-        }
+                    }
 
         #nav li a:hover[href="Contact.php"] {
             opacity: 0.9;
@@ -170,6 +170,11 @@ input[type=text]
         #nav li a:hover[href="Tours.php"] {
             opacity: 0.9;
             background-color: rgb(67, 178, 223);
+            
+        }
+        #nav li a:hover[href="feedback1.php"] {
+            opacity: 0.9;
+            background-color: rgb(167, 108, 223);
             
         }
 
@@ -210,7 +215,9 @@ input[type=text]
         <li><a href="Bistro.php">Bistro</a></li>
         <li><a href="Booking.php">Booking</a></li>
         <li><a href="Contact.php" id="exp">Contact</a></li> 
-     
+        <li><a href="feedback1.php">Feedback</a></li>
+        <li><a href="Admin.php">Admin</a>
+
 
         <li>
 
