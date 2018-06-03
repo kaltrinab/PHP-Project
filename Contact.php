@@ -585,7 +585,7 @@ class Person {
             <table>
 <<<<<<< HEAD
             <tr><td>Your name </td><td><input type="text" name="name"></td></tr>
-     <tr><td>   To :</td> <td><input type="text" name="email"> </td></tr>
+     
 =======
            
      <tr><td>   To :</td> <td><input type="text" name="email" onkeyup="showHint(this.value)"> <p>Suggestions: <span id="txtHint"></span></p></td></tr>
