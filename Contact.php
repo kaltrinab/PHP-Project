@@ -23,6 +23,24 @@ $(document).ready(function(){
     });
 });
 
+//function for suggestions AJAX
+function showHint(str) {
+    if (str.length == 0) { 
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET", "gethint.php?q=" + str, true);
+        xmlhttp.send();
+    }
+}
+
+
 </script>
     <!--<script src="JScript.js"></script>-->
     <link rel="stylesheet" type="text/css" href="DB/Contact_style.css">
@@ -565,8 +583,13 @@ class Person {
             
             <form method="post" action="send_Email.php">
             <table>
+<<<<<<< HEAD
             <tr><td>Your name </td><td><input type="text" name="name"></td></tr>
      <tr><td>   To :</td> <td><input type="text" name="email"> </td></tr>
+=======
+           
+     <tr><td>   To :</td> <td><input type="text" name="email" onkeyup="showHint(this.value)"> <p>Suggestions: <span id="txtHint"></span></p></td></tr>
+>>>>>>> 49a796cd3212cc9209fdb2a104455b86ee8669a2
      <tr><td>   Subject :</td><td>   <input type="text" name="subject"></td></tr>
        
       <tr><td>   Message</td><td>   <input type="text" name="comment"></td></tr>
