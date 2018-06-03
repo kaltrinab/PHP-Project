@@ -54,6 +54,15 @@ width:20%;
         <div id="logo1" style="margin-bottom:5%;">
  
   <img id="imglogo1" src="Foto/impulse_LOGO.png" alt="Logoja"/>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-like" data-href="https://www.facebook.com/Imulse-178798192831677" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
  
         </div>
 
