@@ -290,10 +290,12 @@ function topFunction() {
             <li><a href="Bistro.php">Bistro</a></li>
             <li><a href="Booking.php">Booking</a></li>
             <li><a href="Contact.php">Contact</a></li>
+            <li><a href="feedback1.php">Feedback</a></li>
+            <li><a href="Admin.php">Admin</a></li>
             <li id="demo"><?php 
         
         echo "<a href='logout.php'>Logout</a>";
-?></li>
+         ?></li>
             
             <li>
 
