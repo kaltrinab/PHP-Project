@@ -45,206 +45,350 @@ function showHint(str) {
     <!--<script src="JScript.js"></script>-->
     <link rel="stylesheet" type="text/css" href="DB/Contact_style.css">
     <style>
-        #nav a {
-            display: block;
-            color: white;
-            text-align: center;
-            width: 100px;
-            padding: 10px;
-            text-decoration: none;
-            margin-left: -0.3em;
-        }
 
-        #nav li a[href="Contact.php"] {
-            opacity: 0.9;
-            background-color: #2E9AFE;
-        }
+#nav li a[href="Contact.php"] {
+    opacity: 0.9;
+    background-color: #2E9AFE;
+}
+.forma {
+	color: #0A68E4;
+	display: flex;
+	height: 1.2em;
+    margin-left: 14%;
+}
+input[type=radio] {
+    width: 2em;
+    font-size: 1em;
+}
+input[type=text]:focus {
+    outline: none;
+    background-image: url(Foto/person1.png);
+    background-size: 8% 70%;
+    padding-left: 9%;
+    background-repeat: no-repeat;
+    opacity: 1;
+    vertical-align: middle;
+    background-position: 1%;
+}
 
-        .forma {
-            color: #0A68E4;
-            display: flex;
-            height: 1.2em;
-            margin-left: 14%;
-        }
+input[type=text] {
+    background-image: url(Foto/person1.png);
+    background-size: 8% 70%;
+    padding-left: 9%;
+    background-position: 1%;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
 
-        input[type=radio] {
-            width: 2em;
-            font-size: 1em;
-        }
+input[type=password]:focus {
+    outline: none;
+    background-image: url(Foto/lock.png);
+    background-size: 8% 70%;
+    padding-left: 9%;
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-position: 1%;
+}
 
-        input[type=text]:focus {
-            outline: none;
-            background-image: url(Foto/person1.png);
-            background-size: 8% 70%;
-            padding-left: 9%;
-            background-repeat: no-repeat;
-            opacity: 1;
-            vertical-align: middle;
-            background-position: 1%;
-        }
+input[type=password] {
+    background-image: url(Foto/lock.png);
+    background-size: 8% 70%;
+    padding-left: 9%;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-position: 1%;
+}
+input[type=tel]:focus {
+    outline: none;
+    background-image: url(Foto/tel.png);
+    background-size: 8% 70%;
+    padding-left: 9%;
+    background-repeat: no-repeat;
+    background-position: 1%;
+    background-origin:border-box;
+    opacity: 1;
+}
 
-        input[type=text] {
-            background-image: url(Foto/person1.png);
-            background-size: 8% 70%;
-            padding-left: 9%;
-            background-position: 1%;
-            background-repeat: no-repeat;
-            opacity: 0.8;
-        }
+input[type=tel] {
+    background-image: url(Foto/tel.png);
+    background-size: 8% 70%;
+    padding-left: 9%;
+    background-position: 1%;
+    background-repeat: no-repeat;
+    background-origin:border-box;
+    opacity: 0.8;
+}
 
-        input[type=password]:focus {
-            outline: none;
-            background-image: url(Foto/lock.png);
-            background-size: 8% 70%;
-            padding-left: 9%;
-            background-repeat: no-repeat;
-            opacity: 1;
-            background-position: 1%;
-        }
+input[type=email]:focus {
+    outline: none;
+    background-image: url(Foto/emaili1.png);
+    background-size: 8% 70%;
+    padding-left: 9%;
+    background-repeat: no-repeat;
+    background-position: 1%;
+    opacity: 1;
+}
 
-        input[type=password] {
-            background-image: url(Foto/lock.png);
-            background-size: 8% 70%;
-            padding-left: 9%;
-            background-repeat: no-repeat;
-            opacity: 0.8;
-            background-position: 1%;
-        }
-        input[type=tel]:focus {
-            outline: none;
-            background-image: url(Foto/tel.png);
-            background-size: 8% 70%;
-            padding-left: 9%;
-            background-repeat: no-repeat;
-            background-position: 1%;
-             background-origin:border-box;
-            opacity: 1;
-        }
+input[type=email] {
+    background-image: url(Foto/emaili1.png);
+    background-size: 8% 70%;
+    padding-left: 9%;
+    background-position: 1%;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
 
-        input[type=tel] {
-            background-image: url(Foto/tel.png);
-            background-size: 8% 70%;
-            padding-left: 9%;
-            background-position: 1%;
-            background-repeat: no-repeat;
-            background-origin:border-box;
-            opacity: 0.8;
-        }
+textarea {
+    width: 500px;
+    min-height: 300px;
+    max-height: 600px;
+    text-indent: 1%;
+    overflow: auto;
+    font-size: 15px;
+    border-style: none;
+    border-radius: 10px;
+    border: 2px solid #18121e;
+    outline: none;
+    opacity: 0.8;
+    resize: vertical;
+}
 
-        input[type=email]:focus {
-            outline: none;
-            background-image: url(Foto/emaili1.png);
-            background-size: 8% 70%;
-            padding-left: 9%;
-            background-repeat: no-repeat;
-            background-position: 1%;
-            opacity: 1;
-        }
-
-        input[type=email] {
-            background-image: url(Foto/emaili1.png);
-            background-size: 8% 70%;
-            padding-left: 9%;
-            background-position: 1%;
-            background-repeat: no-repeat;
-            opacity: 0.8;
-        }
-
-        textarea {
-            width: 500px;
-            min-height: 300px;
-            max-height: 600px;
-            text-indent: 1%;
-            overflow: auto;
-            font-size: 15px;
-            border-style: none;
-            border-radius: 10px;
-            border: 2px solid #18121e;
-            outline: none;
-            opacity: 0.8;
-            resize: vertical;
-        }
-
-            textarea:focus {
+textarea:focus {
                 opacity: 1;
-            }
+}
 
-        .a1 {
-            cursor: pointer;
-        }
+.a1 {
+    cursor: pointer;
+}
+.b {
+    cursor: auto;
+}
+nav ul li form input[type = text] {
+    background-image: none;
+    padding-left: 0;
+}
+nav ul li form input[type = text]:focus {
+    background-image: none;
+    padding-left: 0;
+}
 
-        .b {
-            cursor: auto;
-        }
-
-        nav ul li form input[type = text] {
-            background-image: none;
-            padding-left: 0;
-        }
-
-            nav ul li form input[type = text]:focus {
-                background-image: none;
-                padding-left: 0;
-            }
-
-        .user {
-            border: 1px solid black;
-            padding: 5px;
-            width: 300px;
-            outline: 1px solid lightblue;
-            outline-offset: 5px;
-        }
-
-        .forma1 {
-            color: #0A68E4;
-            display: flex;
-            height: 1.2em;
-            margin-left: 14%;
-        }
+.user{           
+    border: 1px solid black;
+    padding: 5px;
+    width: 300px;
+    outline: 1px solid lightblue;
+    outline-offset: 5px;
+}
+.forma1 {
+    color: #0A68E4;
+    display: flex;
+    height: 1.2em;
+    margin-left: 14%;
+}
+.tipsid1, .clicktips1 {
+    background-color: #ececec;
+    border: 2.5px solid black;
+    height:10%;
+    width:68%;
+    min-width:60.5em;
+    margin-left:13.8%;   
+}
+.tipsid1 {
+    margin-left:13.8%;
+    display: none;
+    border-radius:5px;
+    width:68%;
+    min-width:60.5em;
+    height:530px;
+}
         
+.Email1,.clickEmail1 {
+    background-color: #ececec;
+    border: 2.5px solid black;
+    height:10%;
+    width:68%;
+    min-width:60.5em;
+    margin-left:13.8%; 
+}
+.Email1{
+    margin-left:13.8%;
+    display: none;
+    border-radius:5px;
+    width:68%;
+    min-width:60.5em;
+    height:400px;
+}
+
+ /*------------------------------------------*/
+header {
+    background-color: RGB(0,0,0);
+    background-attachment: fixed;
+    min-width: 84em;
+    min-height: 10em;
+} 
+
+.hi{
+    background:url('Fotot/img1.jpg');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    width:100%;
+    height:100%;
+        }
+.hi1{
+      background:url('Fotot/img2.jpg');
+      background-repeat:no-repeat;
+      background-size:100% 100%;
+      width:100%;
+      height:100%;
+    }
+.hi2{
+  background:url('Fotot/img3.jpg');
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  width:100%;
+  height:100%;
+    }
+
+
+      
+label
+{
+    width: 100px;
+    display: inline-block;
+}
+#frmBooking{
+    min-width:500px;
+}
+#transparente{
+    padding: 26px;
         
-        .tipsid1, .clicktips1 {
-            background-color: #ececec;
-            border: 2.5px solid black;
-            height:10%;
-            width:68%;
-            min-width:60.5em;
-            margin-left:13.8%;   
-        }
-        .tipsid1 {
-            margin-left:13.8%;
-            display: none;
-            border-radius:5px;
-            width:68%;
-            min-width:60.5em;
-            height:530px;
-        }
-        
-        .Email1,.clickEmail1 {
-            background-color: #ececec;
-            border: 2.5px solid black;
-            height:10%;
-            width:68%;
-            min-width:60.5em;
-            margin-left:13.8%; 
-          
-
-        }
-        .Email1{
-            margin-left:13.8%;
-            display: none;
-            border-radius:5px;
-            width:68%;
-            min-width:60.5em;
-            height:400px;
-        }
-        
-    </style>
-    <script>
+    background-color: rgba(0,0,0,.70);
+    border: 1px solid white;
+    border-radius: .6em;
+    min-width: 500px;
+    color: white;  
+    margin-bottom: 16%;
+    margin-top:16%;
 
 
+}
+input[type=text]
+{
+    display: inline-block;
+}
+#imgheader {
+    height: 30%;
+    width: 30%;
+    text-align: center;
+       
+}
 
+/*Pjesa e logos se faqes per pjesen lart*/
+img {
+    height: 120px;
+    width: 100px;
+    max-width: 100%;
+    image-orientation: inherit;
+}
+/*Ju jep keto karakteristika te gjitha elementeve*/
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+/*--------------------------------------------*/
+/*CSS per pjesen e menu-se*/
+nav {
+    min-width: 84em;
+    margin: 0 0 0 0;
+    font-family: Arial;
+    font-size: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    min-height: 2.25em;
+}
 
+nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #232323;
+        text-align: center;
+        vertical-align: top;
+        min-height: 2.25em;
+}
+#nav li {
+    display: inline-block;
+    border-right: 2px solid;
+    border-right-color: #3CC47C;
+}
+#nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    text-decoration: none;
+    margin-left: -0.3em;
+}
+#nav li a:hover[href="Bistro.php"] {
+    background-color: #A0522D;
+  }
+
+#nav li a:hover[href="Rooms.php"] {
+    opacity: 0.9;
+    background-color: #86B404;
+    margin-left: 0;
+}
+
+#nav li a[href="Rooms.php"] {
+    margin-left: 0;
+  }
+
+#nav li a:hover[href="Booking.php"] {
+    opacity: 0.9;
+    background-color: #088A4B;
+}
+#nav li a:hover[href="Contact.php"] {
+    opacity: 0.9;
+    background-color: #2E9AFE;
+}
+
+#nav li a:hover[href="Conference.php"] {
+    opacity: 0.9;
+    background-color: #04B4AE;
+  }
+
+#nav li a:hover[href="Tours.php"] {
+    opacity: 0.9;
+    background-color: rgb(67, 178, 223);
+      
+}
+#nav li a:hover[href="feedback1.php"] {
+    opacity: 0.9;
+    background-color: rgb(167, 108, 223);
+}
+fieldset{
+    padding: 20px;
+}
+form {
+    overflow: auto;
+    padding: 0;
+}
+/*Vija ne anen e majte te femijes se pare*/
+#nav li:first-child {
+    border-left: 2px solid;
+    border-left-color: #3CC47C;
+}
+/*Vija ne elementin e fundit te listes te mos shfaqet*/
+#nav li:last-child {
+    border-right: none;
+}
+</style>
+
+<script>
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -255,29 +399,45 @@ function scrollFunction() {
     }
 }
 
-
-
-
-
 // Kur klikon butonin dergo ne top
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-    </script>
-
-
-
-
-
+</script>
 </head>
-
 
 <body style="background-color:#ececec;">
    
-<div class="header">
-<?php include 'DB\header.php';?>
-</div>
+ 
+ <header> 
+   <img src="Foto/impulse.png" id="imgheader" alt="Impulse" style="margin-top:1.5%;margin-bottom:1.5%;margin-left:34.9%" />
+ </header>
+ 		<nav>
+    	<ul id="nav">
+
+	        <li><a href="Rooms.php">Rooms</a></li>
+	        <li><a href="Conference.php">Conference</a></li>
+	        <li><a href="Tours.php">Tours</a></li>
+ 			<li><a href="Bistro.php">Bistro</a></li>
+            <li><a href="Booking.php">Booking</a></li>
+            <li><a href="Contact.php">Contact</a></li>
+            <li><a href="feedback1.php">Feedback</a></li>
+            <li id="demo"><?php 
+        
+        echo "<a href='logout.php'>Logout</a>";
+?></li> <li>
+
+          <li style="vertical-align:middle;">
+
+                          <form action="https://www.google.com" method="GET" target="_blank" style=" border-radius:2px;background-color:#314a37;padding:4px; ">
+                              <input type="text" placeholder="Search Location" name="q" style=" line-height: 22px;border:none;  cursor: pointer;border-radius:2px;font-family:sans-serif;font-style: normal;">
+                              <input type="submit" value="Submit"; style=" box-shadow:1px 1px 0 #677B66;border:none; background: #C1DEC0;line-height:22px;  cursor: pointer;border-radius:2px;font-family:sans-serif;font-style: normal;">
+                          </form>
+          </li></li>
+        </ul>
+       </nav>
+
 <?php
 
 class Person {
@@ -373,7 +533,7 @@ class Person {
             <p id="teksti3">
                 <img src='Foto/male.png' style="width:15%;height:15%;" alt='&Ccedilenk' align='left' />
                 <span style='font-size:30px'>&Ccedilenk Tosun</span><br/><br/>	
-                Guests love the effortless and relaxed atmosphere we create.
+                       Guests love the effortless and relaxed atmosphere we create.
                       Flawless symbiosis of thoughtful and clever hardware,
                       wrapped in a cool and appealing message, and a dedicated team who just love to inspire
                       our guests and represent our unique product. Those looking for a quieter experience can
@@ -383,24 +543,13 @@ class Person {
                        resorts, which ensures plenty of variety. All rooms are considered suites with jacuzzis
                        and separate living areas. Fun pool atmosphere with swim-up bar and animation. Five dining
                         options including romantic fondue options
-
             </p>
-         
-
-        </div>
-        <br/>
-        
+         </div>
+        <br/>  
     </div>
     <br/><br/>
 
-
-
-
-
-
     <div style="width:100%;min-width:84em;">
-    
-
     <div style="width:50%;min-width:60.5em; background-color:#ececec; height:25%; margin-left:14%; margin-top:5%; margin-bottom:5%;">
         <fieldset style="border:3px solid #58423e;border-radius:10px;height:400px;">
             <br/>
@@ -411,15 +560,7 @@ class Person {
             
 
 
-
-
-
-
-
-
                 <form method="post"  id="forma1" action="" >
-        
-                    
                     <br/><br/>
                   
                     <input type="email"name="email" required="required" pattern="[a-zA-Z0-9]{0,20}@[a-zA-Z]{0,10}.[a-zA-Z]{0,3}"  name="email" autocomplete="on" placeholder="Email" style=" height:2em;width:60%;font-size:15px;
@@ -434,7 +575,7 @@ class Person {
                     <input type="reset" value="Reset" name="Reset" style=" border-type:outset; margin-left:5%;margin-bottom:5%; width:20%;
                            height:40px;box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);border-radius:3px;outline:none;">
 
-</form>
+				</form>
             </div>
           
           
@@ -442,12 +583,8 @@ class Person {
 
             <div style="height:30em ; width:30em ;float:left; margin-top:-0.4%;margin-bottom:15%;">
                 <textarea cols="60" rows="3" placeholder="Share your experiences" style="margin-left:3%"></textarea>
-                
-
             </div>
-
             </form>
-            
         </fieldset>
         <div style="margin-top:-36px;border-radius:5px;height:40px;cursor:pointer; margin-left:3%;margin-bottom:3%;">
         <?php 
@@ -485,33 +622,21 @@ class Person {
 
             
 
-                   <form method="post" action="">
-                   <input type="text" name="name" required="required" autocomplete="off" maxlength="30" placeholder="Name" style="height:2em;font-size:15px;border-style:none;
-                                                                                     border-radius:10px ;width:22%;border: 2px solid #18121e; margin-left:3%;padding-left:4%;" >
-                   
-                                                            
-                 
+               <form method="post" action="">
+                   <input type="text" name="name" required="required" autocomplete="off" maxlength="30" placeholder="Name" style="height:2em;font-size:15px;border-style:none; border-radius:10px ;width:22%;border: 2px solid #18121e; margin-left:3%;padding-left:4%;" >
                    <br></br>
-               <input type="text" name="surname" autocomplete="off"  placeholder="Surname"  style=" height:2em;font-size:15px;width:22%;
-                                                                         border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
-              <div style="float:right;margin-right:10%;width:50%;height:30%;">
-               <img  src="Foto/impulse_LOGO.png" style="height:100%;width:100%;">
-             </div>
-                                                                            
-                     </br></br>
-                     <input type="email"  pattern="[a-zA-Z0-9]{0,20}@[a-zA-Z]{0,10}.[a-zA-Z]{0,3}"  name="email" autocomplete="on" placeholder="Email"  style=" height:2em;width:22%;font-size:15px;
-                                                                                           border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
-                                                                                                                                                              </br></br>
-
-
-                   <input type="password" name="password" pattern="\S{8,16}$" required="required" placeholder="Password" style=" height:2em;font-size:15px;width:22%;
-                                                                                               border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
+               	   <input type="text" name="surname" autocomplete="off"  placeholder="Surname"  style=" height:2em;font-size:15px;width:22%;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
+              	   <div style="float:right;margin-right:10%;width:50%;height:30%;">
+               		<img  src="Foto/impulse_LOGO.png" style="height:100%;width:100%;">
+                   </div>
+                   </br></br>
+                    <input type="email"  pattern="[a-zA-Z0-9]{0,20}@[a-zA-Z]{0,10}.[a-zA-Z]{0,3}"  name="email" autocomplete="on" placeholder="Email"  style=" height:2em;width:22%;font-size:15px;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
+                   <input type="password" name="password" pattern="\S{8,16}$" required="required" placeholder="Password" style=" height:2em;font-size:15px;width:22%;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
                </br></br>
-               <label>
-                    <input id="repeat" required  type="password" name="repeatpassword" placeholder="Repeat password" style="height:2em;font-size:15px;width:22%;
-                      padding-left:4%; border-style:none;border-radius:10px ;border:2px solid #18121e; margin-left:3%" />
-                </label>
-                <br /><br />
+                    <label>
+                    <input id="repeat" required  type="password" name="repeatpassword" placeholder="Repeat password" style="height:2em;font-size:15px;width:22%;padding-left:4%; border-style:none;border-radius:10px ;border:2px solid #18121e; margin-left:3%" />
+                    </label>
+                <br/><br />
                 <input type="file" name="img"  value="Choose Photo" multiple style="margin-left:3%;">
                 <br></br>
                  <select name="select" class="select-field" style="height:2em;font-size:15px;outline:none;text-indent:1%;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;">
@@ -529,10 +654,8 @@ class Person {
                      <input type="radio" name="gender" value="Female"  style="margin-left:3%;width: 20px;height: 20px;"> Female</br>
                <br>
          </br><br>
-         <input type="submit" value="Sign up" name="Submit" formmethod="post" formtarget="_blank"  style=" border-type:outset; margin-left:5%;margin-bottom:5%; width:20%;border-radius:3px;outline:none;
-                                                                 height:40px;box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75)">
-          <input type="reset" value="Reset" name="Reset"    style=" border-type:outset; margin-left:5%;margin-bottom:5%; width:20%;border-radius:3px;outline:none;
-                                                                 height:40px;box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75)">
+         <input type="submit" value="Sign up" name="Submit" formmethod="post" formtarget="_blank"  style=" border-type:outset; margin-left:5%;margin-bottom:5%; width:20%;border-radius:3px;outline:none; height:40px;box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75)">
+          <input type="reset" value="Reset" name="Reset"    style=" border-type:outset; margin-left:5%;margin-bottom:5%; width:20%;border-radius:3px;outline:none;height:40px;box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75)">
                  <br>
              </form>
                
@@ -578,10 +701,6 @@ Guess:<input type="number" name="guess"></br>
 
 </form>
 </center>
-
-
-
-
    <footer >
         <div id="logo1" style="margin-bottom:5%;">
  
