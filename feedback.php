@@ -33,7 +33,6 @@ div{
     margin:10%;
 }
 </style>
-    </style>
 </head>
 <?php 
     require_once('db.php');
