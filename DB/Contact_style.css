@@ -65,79 +65,13 @@ nav {min-width:84em;
       margin-left:-0.3em;
 }
 
-        #nav li a:hover[href="Impulsi Camping.html"]{
-
-          background-color: #A0522D;
-        }
-        #nav li a:hover[href="Impulsi HIKING.html"]{
-        opacity:0.9;
-          background-color: #86B404;
-          margin-left:0;
-        }
-        #nav li a[href="Impulsi HIKING.html"]{
-          margin-left:0;
-        }
-        #nav li a:hover[href="Impulsi Cycling.html"]{
-        opacity:0.9;
-          background-color: #088A4B;
-        }
-        #nav li a:hover[href="Experience.html"]{
-        opacity:0.9;
-          background-color:  #2E9AFE;
-        }
-        #nav li a:hover[href="Impulsi Surfing.html"]{
-        opacity:0.9;
-          background-color:#04B4AE;
-        }
-        #nav li a:hover[href="Impulsi Scuba-Diving.html"]{
-        opacity:0.9;
-          background-color:#2ECCFA;
-        }
-        #nav li a:hover[href="Game.html"]{
-            background-color:rgb(71, 71, 90);
-        }
+       
         
         form {
             overflow: auto;
             padding: 0;
         }
-        /*Vija ne anen e majte te femijes se pare*/
-        #nav li:first-child {
-            border-left: 2px solid;
-            border-left-color: #3CC47C;
-        }
-            /*Vija ne elementin e fundit te listes te mos shfaqet*/
-        #nav li:last-child {
-            border-right: none;
-        }
-        #nav li a:hover[href="camp.html"]{
-
-            background-color: #A0522D;
-          }
-          #nav li a:hover[href="hike.html"]{
-          opacity:0.9;
-            background-color: #86B404;
-            margin-left:0;
-          }
-          #nav li a[href="hike.html"]{
-            margin-left:0;
-          }
-          #nav li a:hover[href="cycle.html"]{
-          opacity:0.9;
-            background-color: #088A4B;
-          }
-          #nav li a:hover[href="Experience.html"]{
-          opacity:0.9;
-            background-color:  #2E9AFE;
-          }
-          #nav li a:hover[href="surf.html"]{
-          opacity:0.9;
-            background-color:#04B4AE;
-          }
-          #nav li a:hover[href="scuba.html"]{
-          opacity:0.9;
-            background-color:#2ECCFA;
-          }
+       
 
 
 
@@ -149,7 +83,7 @@ nav {min-width:84em;
     }
 	  /*Fotoja*/
 	.main-banner {
-        background: url("Foto/background.jpg") 100%;
+        background: url("Foto/hotel_1.jpg") 100%;
         background-size: 100% 100%;
         min-height: 30em;
         max-height: 74.5vh;
@@ -199,36 +133,7 @@ nav {min-width:84em;
             font-weight: 600;
             font-family: cursive;
     }
-  /*Brenda seciles kornize*/
-	.hik {
-        background: url("Foto/hiking_6.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-	.sur {
-        background: url("Foto/surfing_3.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-
-    .scu {
-        background: url("Foto/scubadiving_4.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-
-
-    .cam {
-        background: url("Foto/camping_1.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-
-    .cyc {
-        background-image: url("Foto/cycling_3.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
+ 
     .drop {
         padding: 5px;
         font-size: 16px;

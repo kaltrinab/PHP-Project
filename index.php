@@ -5,7 +5,7 @@
       <head>
       <link rel="stylesheet" type="text/css" href="DB/Contact_style.css">
       
-      <link rel="stylesheet" type="text/css" href="style.css">
+     
         <meta charset="utf-8" />
 
             <link rel="icon" sizes="192x192" href="Foto/01.png">
