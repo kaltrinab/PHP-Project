@@ -152,6 +152,17 @@ font-family: 'Times New Roman', Times, serif;
         font-family: 'Times New Roman', Times, serif;
   
 }
+#tabela {margin-left:1%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 85%;
+}
+
+#tabela td, #tabela th {
+    border: 1px solid rgb(67, 178, 223);
+    text-align: left;
+    padding: 8px;
+}
 
 </style>
 </head>
