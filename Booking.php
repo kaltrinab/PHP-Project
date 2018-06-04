@@ -7,27 +7,7 @@
 <link rel="icon" sizes="192x192" href="Foto/01.png">
  <title>IMPULSE</title>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <script src="jquery-1.11.2.min.js">
-    </script>
-<script>  
-$(document).ready(function(){
-var commentCount=2;
-$("button").click(function(){
-
-rowCount=rowCount+2;
-$("#comments").load("getRow.php",{
-
-    rowNewCount:rowCount});
-});
-
-
-});
-
-
-});
-</script>
-
+   <script src="jquery-1.11.2.min.js">  </script>
     <style>
 
         * {
@@ -107,6 +87,10 @@ $("#comments").load("getRow.php",{
             outline: none;
         }
     </style>
+
+
+
+ 
 </head>
 <body>
 <div class="header">
@@ -172,7 +156,7 @@ $("#comments").load("getRow.php",{
 
 
 
-<form id="frmBooking" action=" try {DB/Insert.php} catch(Exception $e) {echo 'Message: ' .$e->getMessage();}"  method="POST"><fieldset>
+<form id="frmBooking" action="DB/Insert.php"  method="POST"><fieldset>
     
     <legend><?php  $text="Personal details:"; echo $text;    ?></legend>
     <br><br>
@@ -254,41 +238,8 @@ $("#comments").load("getRow.php",{
 
 
      </div>   
-     <div id="comments">
-<?php
+  
 
-mysqli_select_db($con,"projektiphp");
-
-$result=mysqli_query($con,"select * from staff limit 2");
-
-echo "<table>
-<tr>
-<th>ID</th>
-<th>Emri</th>
-<th>Mbiemri</th>
-<th>Pozita</th>
-</tr>";
-
-if(mysqli_num_rows($result)>0){
-while($data = mysqli_fetch_row($result))
-{   
-    echo "<tr>";
-    echo "<td align=center>".$data[0]."</td>";
-    echo "<td align=center>".$data[1]."</td>";
-    echo "<td align=center>".$data[2]."</td>";
-    echo "<td align=center>".$data[3]."</td>";
-    echo "</tr>";
-}
-echo "</table>";}
-
-else{
-    echo "There are no more rows!";
-}
-?>
-</div>
-<button>Show more!</button>
 
 
 <?php require("DB/footer.php") ?>
-</body>
-</html>
