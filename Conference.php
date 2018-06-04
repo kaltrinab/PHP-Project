@@ -2,19 +2,18 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta charset="utf-8" />
+<meta charset="utf-8" />
  <!--logo ne tab -->
- <link rel="icon" sizes="192x192" href="Foto/01.png">
- <title>IMPULSE</title>
+<link rel="icon" sizes="192x192" href="Foto/01.png">
+<title>IMPULSE</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="jquery-1.11.2.min.js"></script>
 	<script>
 $(document).ready(function(){
-                            $(".hh3").append('<span>Conference?</span>').css("color","#0B0B61");
-							 });
+   $(".hh3").append('<span>Conference?</span>').css("color","#0B0B61");
+});
 							 
-							 
-							 
+
 $(document).ready(function(){
     $(".blur").hover(function(){
         $(".blur").css("color","#A9E2F3");
@@ -34,36 +33,32 @@ $(document).ready(function(){
         $(".tipsid").slideToggle("slow");
     });
 });
-
 </script>
 </head>
+
 <style>
-
-
-
-form {
+form 
+{
     overflow: auto;
     padding: 0;
 }
-
-	  /*Fotoja*/
-	.main-banner {
-        background: url("Foto/Conferenceing_1.jpg") ;
-        background-size: 100% 100%;
-        min-height:100%;
-        height:100%;
-        display: flex;
-        background-repeat: no-repeat;
+ /*Fotoja*/
+.main-banner
+ {
+    background: url("Foto/Conferenceing_1.jpg") ;
+    background-size: 100% 100%;
+    min-height:100%;
+    height:100%;
+    display: flex;
+    background-repeat: no-repeat;
 		z-index:2;
-        min-width:100%;
-    }
+    min-width:100%;
+}
 
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
-#myBtn {
+#myBtn 
+{
   display: none;
   position: fixed;
   z-index: 99;
@@ -83,98 +78,85 @@ form {
 /*Div element per homeButton*/
 #homeButton
 {
-position: fixed;
+  position: fixed;
   bottom: 3%;
   left: 1%;
 }
 #homeButton:hover{
   opacity:0.8;
 }
-
-
-      
-
-
-*{
-font-family:'Trebuchet ms'
+*
+{
+  font-family:'Trebuchet ms';
 }
 nav ul li form input[type = text]{
 
   padding-left: 0;
   opacity: 0.8;
 }
-nav ul li form input[type = text]:focus{
-
-  padding-left: 0;
-  opacity: 1;
+nav ul li form input[type = text]:focus
+{
+   padding-left: 0;
+   opacity: 1;
 }
-.tipsid, .clicktips {
-    background-color: rgb(14, 150, 145);
-    border: none;
-    height:10%;
-    width:95%;
-    margin-left:2%;
-}
-
-
-.tipsid {
-    margin-left:2%;
-    display: none;
-    border-radius:1%;
-    width:95%;
-    margin-top:-3.8%;
+.tipsid, .clicktips 
+{
+   background-color: rgb(14, 150, 145);
+   border: none;
+   height:10%;
+   width:95%;
+   margin-left:2%;
 }
 
-
-
-    
-    .outdoor{
-        padding: 24px;
-        
-        background-color: rgba(0, 0, 0, 0.212);
-        border: 1px solid white;
-        border-radius: .5em;
-        
-    }
-    #article{
-  width: 100%;
+.tipsid 
+{
+   margin-left:2%;
+   display: none;
+   border-radius:1%;
+   width:95%;
+   margin-top:-3.8%;
+}
  
+.outdoor
+{
+  padding: 24px;
+  background-color: rgba(0, 0, 0, 0.212);
+  border: 1px solid white;
+  border-radius: .5em;
 }
+#article{
+  width: 100%; 
+}
+
 #main-section
 {
- float: left;
- margin: 5%;
- width: 63%;
- height: 100%;
- padding: 1%;
- margin-left:0%;
-background-image: url(Fotot/img1.jpg);
-color:white;
-font:tahoma;
- border-radius: 15px;
-
- background-color:rgba(200,180,192,0.4);
- height:57.5vh;
-        z-index:-2;
-        background-repeat: no-repeat;
-
-
+   float: left;
+   margin: 5%;
+   width: 63%;
+   height: 100%;
+   padding: 1%;
+   margin-left:0%;
+   background-image: url(Fotot/img1.jpg);
+   color:white;
+   font:tahoma;
+   border-radius: 15px;
+   background-color:rgba(200,180,192,0.4);
+   height:57.5vh;
+   z-index:-2;
+   background-repeat: no-repeat;
 }
 #second-section
 { 
- 
-width: 40%;
-float: left;
-height: 100%;
- padding: 5%;
- }
-
+    width: 40%;
+    float: left;
+    height: 100%;
+    padding: 5%;
+}
 aside 
 {
   float: left;
   width: 60%;
-margin-bottom: 1%;
-
+  margin-bottom: 1%;
 }
 #asideofarticle
 {
@@ -184,7 +166,7 @@ margin-bottom: 1%;
   margin-top: 5.5%;
   margin-right:1%;
   margin-left:1%;
-margin-bottom: 0;
+  margin-bottom: 0;
   padding: 0;
   background-image: url(Fotot/cnf1.jpg);
   background-repeat: no-repeat;
@@ -194,159 +176,109 @@ margin-bottom: 0;
 }
 #asideofarticle2
 {
-    margin-bottom: 0;
+  margin-bottom: 0;
   float: right;
   width: 28%;
   height:200px;
-margin-top: 2%;
+  margin-top: 2%;
   margin-right:1%;
   margin-left:1%;
-
   padding: 0;
   background-image: url(Fotot/cnf1.jpg);
   background-repeat: no-repeat;
   border-radius: 15px;
   background-size: contain;
-
 }
-
- 
- 
- 
-
 </style>
+
 <body>
+    <div class="header">
+    <?php include 'DB\header.php';?>
+    </div>
+        
+    <div id="maind"style="margin-left:14.2%;margin-top:4%;margin-bottom:5.3%; width:71%;min-width:48.8em;border:0.1px solid black; ">
+         
+        <section id="article">
+           <div id="main-section">
+              <section id="second-section">
+                  <article class="outdoor">
+                      <h1 style="text-align:center">What makes us unique </h1>
+                        <p><br>
+                          Guests love the effortless and relaxed atmosphere we create.
+                          Flawless symbiosis of thoughtful and clever hardware,
+                          wrapped in a cool and appealing message, and a dedicated team who just love to inspire
+                          our guests and represent our unique product
+                        </p>
+                  </article>
+              </section>
+            </div>
 
-<div class="header">
-<?php include 'DB\header.php';?>
-</div>
-    
-    
-   
-        <div id="maind"style="margin-left:14.2%;margin-top:4%;margin-bottom:5.3%; width:71%;min-width:48.8em;border:0.1px solid black; ">
-	
+            <div style="margin-right:0; margin-left:0%;">
+                <aside id="asideofarticle" > 
+                </aside>  
+                <aside id="asideofarticle2" > 
+                </aside>
+            </div>
 
+            <div >
+                 <aside style="width:100%;">
+                 <article class="outdoor">
+                  <h1 style="text-align:center">What makes us unique </h1>
+                    <p><br>
+                     Guests love the effortless and relaxed atmosphere we create.
+                     Flawless symbiosis of thoughtful and clever hardware,
+                     wrapped in a cool and appealing message, and a dedicated team who just love to inspire
+                     our guests and represent our unique product
+                     Guests love the effortless and relaxed atmosphere we create.
+                     Flawless symbiosis of thoughtful and clever hardware,
+                     wrapped in a cool and appealing message, and a dedicated team who just love to inspire
+                     our guests and represent our unique product
+                    </p>
+                 </article>
+                 </aside>
+             </div>
+             <div>
+                  <aside style="width:100%;">
+                  <article class="outdoor">
+                  <h1 style="text-align:center">What makes us unique </h1>
+                     <p><br>
+                     Guests love the effortless and relaxed atmosphere we create.
+                     Flawless symbiosis of thoughtful and clever hardware,
+                     wrapped in a cool and appealing message, and a dedicated team who just love to inspire
+                     our guests and represent our unique product
+                    </p>
+                   </article>
+                   </aside>
+              </div>
+               <div>
+                   <aside style="width:100%; margin-bottom:50px;">
+                   <article class="outdoor">
+                   <h1 style="text-align:center">What makes us unique </h1>
+                     <p><br>
+                     Guests love the effortless and relaxed atmosphere we create.
+                     Flawless symbiosis of thoughtful and clever hardware,
+                     wrapped in a cool and appealing message, and a dedicated team who just love to inspire
+                     our guests and represent our unique product
+                     Guests love the effortless and relaxed atmosphere we create.
+                     Flawless symbiosis of thoughtful and clever hardware,
+                     wrapped in a cool and appealing message, and a dedicated team who just love to inspire
+                     our guests and represent our unique product  Guests love the effortless and relaxed atmosphere we create.
+                     Flawless symbiosis of thoughtful and clever hardware,
+                     wrapped in a cool and appealing message, and a dedicated team who just love to inspire
+                     our guests and represent our unique product
+                     </p>
+                    </article>
+                    </aside>
+                </div>
+            </section>
 
-            
-                <section id="article">
-                        <div id="main-section">
-                            
-                             <section id="second-section">
-                           
-                                    <article class="outdoor">
-                                            <h1 style="text-align:center">What makes us unique </h1>
-                                            <p>
-                                                <br>
-                                                Guests love the effortless and relaxed atmosphere we create.
-                                                Flawless symbiosis of thoughtful and clever hardware,
-                                                wrapped in a cool and appealing message, and a dedicated team who just love to inspire
-                                                our guests and represent our unique product
-                          
-                          
-                          
-                                            </p>
-                                        </article>
-                               
-                                </section>
-                          
-                           
-                 
-                        </div>
-                        <div style="margin-right:0; margin-left:0%;">
-                        <aside id="asideofarticle" > 
-                        
-                              </aside>  
-                              <aside id="asideofarticle2" > 
-                        
-                                </aside>
-                              </div>
-
-
-
-
-                              
-                              <div >
-                                  <aside style="width:100%;">
-
-                                        <article class="outdoor">
-                                                <h1 style="text-align:center">What makes us unique </h1>
-                                                <p>
-                                                    <br>
-                                                    Guests love the effortless and relaxed atmosphere we create.
-                                                    Flawless symbiosis of thoughtful and clever hardware,
-                                                    wrapped in a cool and appealing message, and a dedicated team who just love to inspire
-                                                    our guests and represent our unique product
-                                                    Guests love the effortless and relaxed atmosphere we create.
-                                                Flawless symbiosis of thoughtful and clever hardware,
-                                                wrapped in a cool and appealing message, and a dedicated team who just love to inspire
-                                                our guests and represent our unique product
-                          
-                              
-                              
-                              
-                                                </p>
-                                            </article>
-                                  </aside>
-                              </div>
-                              <div >
-                                    <aside style="width:100%;">
+<br>			
+<br>
+  </div>
   
-                                          <article class="outdoor">
-                                                  <h1 style="text-align:center">What makes us unique </h1>
-                                                  <p>
-                                                      <br>
-                                                      Guests love the effortless and relaxed atmosphere we create.
-                                                      Flawless symbiosis of thoughtful and clever hardware,
-                                                      wrapped in a cool and appealing message, and a dedicated team who just love to inspire
-                                                      our guests and represent our unique product
-                                
-                                
-                                
-                                                  </p>
-                                              </article>
-                                    </aside>
-                                </div>
-                                <div >
-                                        <aside style="width:100%; margin-bottom:50px;">
-      
-                                              <article class="outdoor">
-                                                      <h1 style="text-align:center">What makes us unique </h1>
-                                                      <p>
-                                                          <br>
-                                                          Guests love the effortless and relaxed atmosphere we create.
-                                                          Flawless symbiosis of thoughtful and clever hardware,
-                                                          wrapped in a cool and appealing message, and a dedicated team who just love to inspire
-                                                          our guests and represent our unique product
-                                                          Guests love the effortless and relaxed atmosphere we create.
-                                                          Flawless symbiosis of thoughtful and clever hardware,
-                                                          wrapped in a cool and appealing message, and a dedicated team who just love to inspire
-                                                          our guests and represent our unique product  Guests love the effortless and relaxed atmosphere we create.
-                                                          Flawless symbiosis of thoughtful and clever hardware,
-                                                          wrapped in a cool and appealing message, and a dedicated team who just love to inspire
-                                                          our guests and represent our unique product
-                                    
-                                    
-                                                      </p>
-                                                  </article>
-                                        </aside>
-                                    </div>
-                       </section>
-                 
-
-<br>
-			
-<br>
-
-
-				</div>
-               
-
-	
-
 
     <script>
             var text="permawewtly attached (glassed-ow) or iwterchawgeable.";
-            
             var result=text.replace(/w/g, "n");
             function a(){
               document.getElementById('regexG').innerHTML=result;
