@@ -15,15 +15,17 @@ if(isset($_POST['submit'])){
     if($username == "impulse" && $password == "impulse123")
 
 {
+        setcookie('username',$username, time()+60);
+        setcookie('password',$password, time()+60);
         $_SESSION['username'] = $username;
         $_SESSION['role'] = "admin";
         header('Location: all-rooms.php');
     }
     else{
         $error = "Wrong Username or Password";
-    }
+  
 }
-
+}
 
 ?>
 
