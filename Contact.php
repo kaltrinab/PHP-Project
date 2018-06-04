@@ -226,30 +226,6 @@ header {
     min-width: 84em;
     min-height: 10em;
 } 
-
-.hi{
-    background:url('Fotot/img1.jpg');
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    width:100%;
-    height:100%;
-        }
-.hi1{
-      background:url('Fotot/img2.jpg');
-      background-repeat:no-repeat;
-      background-size:100% 100%;
-      width:100%;
-      height:100%;
-    }
-.hi2{
-  background:url('Fotot/img3.jpg');
-  background-repeat:no-repeat;
-  background-size:100% 100%;
-  width:100%;
-  height:100%;
-    }
-
-
       
 label
 {
