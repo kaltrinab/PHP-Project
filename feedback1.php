@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title></title>
+<head><title>Feedback</title>
 
-    <style type="text/css">
-  
-        * {
-            font-family: 'Trebuchet ms'
-        }
+<style type="text/css">
 
+*
+ {
+   font-family: 'Trebuchet ms';
+ }
 
-#name,#phone,#email, select, textarea {
-    width: 70%;
+#name,#phone,#email, textarea 
+{
+    width: 50%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -19,12 +19,14 @@
     margin: 15px;
 }
 
-label {
+label
+{
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
 
-#submit {
+#submit 
+{
     margin: 20px;
     background-color: #088A4B;
     color: white;
@@ -32,56 +34,54 @@ label {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 70%;
+    width: 50%;
 }
 
 #submit:hover {
     background-color: #45a049;
 }
-#myBtn {
-            display: none;
-            position: fixed;
-            z-index: 99;
-            height: 25px;
-            width: 25px;
-            cursor: pointer;
-            background: URL('Foto/TopPage.png') no-repeat;
-            background-size: 25px,25px;
-            bottom: 5%;
-            right: 2%;
-            transform: scale(2,2);
-        }
+#myBtn 
+{
+    display: none;
+    position: fixed;
+    z-index: 99;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    background: URL('Foto/TopPage.png') no-repeat;
+    background-size: 25px,25px;
+    bottom: 5%;
+    right: 2%;
+    transform: scale(2,2);
+}
+#myBtn:hover {
+    opacity: 0.8;
+}
 
-            #myBtn:hover {
-                opacity: 0.8;
-            }
-
-        /*Div element per homeButton*/
-        #homeButton {
-            position: fixed;
-            bottom: 3%;
-            left: 1%;
-            z-index: 2;
-        }
-
-            #homeButton:hover {
-                opacity: 0.8;
-            }
-
-
+/*Div element per homeButton*/
+#homeButton {
+    position: fixed;
+    bottom: 3%;
+    left: 1%;
+    z-index: 2;
+} 
+#homeButton:hover {
+    opacity: 0.8;
+}
 </style>
 </head>
 <body>
 
-
 <?php include 'DB/header.php';?>
 
 <center><h1>Give Feedback</h1></center>
+
 <?php
     require_once('db.php');
     $error = "";
     $color = "red";
-    if(isset($_POST['submit'])){
+    if(isset($_POST['submit']))
+    {
         $name = mysqli_real_escape_string($con,$_POST['name']);
         $email = mysqli_real_escape_string($con,$_POST['email']);
         $phone = mysqli_real_escape_string($con,$_POST['phone']);
@@ -89,12 +89,14 @@ label {
 
         $q = "SELECT * FROM feedback ORDER BY feedback.id DESC LIMIT 1";
         $r = mysqli_query($con, $q);
-        if(mysqli_num_rows($r) > 0){
+        if(mysqli_num_rows($r) > 0)
+        {
             $row = mysqli_fetch_array($r);
             $id = $row['id'];
             $id = $id + 1;
         }
-        else{
+        else
+        {
             $id = 1;
         }
 
@@ -119,32 +121,21 @@ label {
 
 
 
-            <div align="center">        
-           
+    <div align="center">        
             <label style="color: <?php echo $color; ?>">
                 <?php
                     echo $error;
                 ?>
             </label>
             <form  method="post">
-                <div >  
                 <input type="text"  name="name" id="name" placeholder="Name">
-                </div>
-                <div >
                 <input type="email"  name="email" id="email" placeholder="Enter email">
-                </div>
-                <div >
                 <input type="phone"  name="phone" id="phone" placeholder="Phone">
-                </div>
-                <div >
                 <textarea type="email"  name="message" placeholder="Message" rows="4"></textarea>
-                </div>  
                 <input type="submit" class="btn btn-primary" value="Send" id="submit" name="submit">
             </form>
-            </div>
-<!-- form -->
-
+    </div>
 
 <?php include 'DB/footer.php';?>
-
-</body></html>
+</body>
+</html>

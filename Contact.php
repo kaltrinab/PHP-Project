@@ -298,7 +298,7 @@ class Person {
 
 
 
-    <div style="display:block; margin-top:2%; min-width:84em; ">
+    <div style="display:block; margin-top:7%; min-width:84em; ">
         <div style="background-color:white; width:67%;min-width:60.5em;margin-left:14%;border-radius:8px;">
             <p id="teksti">
                 <img src='Foto/male.png' style="width:15%;height:15%;" alt='Rapha&eumll ' align='left' />
@@ -308,24 +308,21 @@ class Person {
                 Guests love the effortless and relaxed atmosphere we create.
                       Flawless symbiosis of thoughtful and clever hardware,
                       wrapped in a cool and appealing message, and a dedicated team who just love to inspire
-                      our guests and represent our unique product
+                      our guests and represent our unique product.  this family-friendly section of Paradisus
+                       Palma Real all-inclusive offers a serene, luxurious environment. The property offers 
+                       sprawling grounds, meandering pathways, and upscale amenities such as a top-notch 
+                       spa, yoga, and a seemingly never-ending pool area. Parents will likely appreciate the
+                        Kids Zone and babysitting services, while all can enjoy the daily excursions, quality
+                         restaurants and bars, and personal concierge service.
+
+
 
             </p>
 
         </div>
         <br>
-        <div class="user" style="display:flex;background-color:white; width:30%;min-width:40.5em;margin-left:25%;width:60%;">
-
-
-            <input class="forma1" form="forma" type="radio" name="rate1" value="best"> Best experience<br>
-            <input class="forma1" form="forma" type="radio" name="rate1" value="good"> Good experience<br>
-            <input class="forma1" form="forma" type="radio" name="rate1" value="bad">  Bad experience<br/>
-            <input class="forma1" type="submit"value="Submit" style="margin-top:1%;padding:1px;height:25px;margin-bottom:1%;margin-right:4%;">
-
-        </div>
-
-
-        <div style="background-color:white; width:67%;min-width:60.5em;margin-left:14%;margin-top:3%;border-radius:8px;">
+        
+        <div style="background-color:white; width:67%;min-width:60.5em;margin-left:14%;margin-top:5%;border-radius:8px;">
 
             <p id="teksti1">
                 <img src='Foto/female.png' style="width:15%;height:15%;" alt='&Eumlsma' align='left' />
@@ -355,7 +352,13 @@ class Person {
                the effortless and relaxed atmosphere we create.
                       Flawless symbiosis of thoughtful and clever hardware,
                       wrapped in a cool and appealing message, and a dedicated team who just love to inspire
-                      our guests and represent our unique product
+                      our guests and represent our unique product. The food and beverage offering here is a 
+                      highlight; there are impressive international buffets as well as a la carte restaurants
+                       (one from a Michelin-starred chef) that will appeal to adults and honeymooners. Suites
+                        are decorated with classic mahogany furniture and marble tile floors, and have 
+                        coffeemakers, minibars, and free Wi-Fi. For a more luxurious experience, Royal Service
+                         offers additional amenities and special access to a posh lounge. A beautiful spa is
+                         also available.
 
             </p>
            
@@ -364,16 +367,8 @@ class Person {
 
         </div>
         <br/>
-        <div class="user" style="display:flex;background-color:white; width:30%;min-width:40.5em;margin-left:25% ;width:60%;">
-
-
-            <input class="forma1" form="forma" type="radio" name="rate3" value="best"> Best experience<br>
-            <input class="forma1" form="forma" type="radio" name="rate3" value="good"> Good experience<br>
-            <input class="forma1" form="forma" type="radio" name="rate3" value="bad">  Bad experience<br>
-            <input class="forma1" type="submit" value="Submit"style="margin-top:1%;padding:1px;height:25px;margin-bottom:1%;margin-right:4%;">
-
-        </div>
-        <div style="background-color:white; width:67%;min-width:60.5em;margin-left:14%;margin-top:3%;">
+        
+        <div style="background-color:white; width:67%;min-width:60.5em;margin-left:14%;margin-top:5%;">
 
             <p id="teksti3">
                 <img src='Foto/male.png' style="width:15%;height:15%;" alt='&Ccedilenk' align='left' />
@@ -381,20 +376,20 @@ class Person {
                 Guests love the effortless and relaxed atmosphere we create.
                       Flawless symbiosis of thoughtful and clever hardware,
                       wrapped in a cool and appealing message, and a dedicated team who just love to inspire
-                      our guests and represent our unique product
+                      our guests and represent our unique product. Those looking for a quieter experience can
+                       hit the beach, snag a day bed and have drinks delivered from a server -- though vendors
+                       can sometimes be a nuisance. There are five restaurants on-site, including a romantic
+                       beachside Mediterranean option, and guests also get access to nightlife at the other 
+                       resorts, which ensures plenty of variety. All rooms are considered suites with jacuzzis
+                       and separate living areas. Fun pool atmosphere with swim-up bar and animation. Five dining
+                        options including romantic fondue options
 
             </p>
          
 
         </div>
         <br/>
-        <div class="user" style="display:flex;background-color:white; width:30%;min-width:40.5em;margin-left:25%; width:60%;">
-
-            <input class="forma1" form="forma" type="radio" name="rate4" value="best"> Best experience<br>
-            <input class="forma1" form="forma" type="radio" name="rate4" value="good"> Good experience<br>
-            <input class="forma1" form="forma" type="radio" name="rate4" value="bad">  Bad experience<br>
-            <input class="forma1" type="submit" value="Submit" style="margin-top:1%;padding:1px;height:25px;margin-bottom:1%;margin-right:4%;">
-        </div>
+        
     </div>
     <br/><br/>
 
