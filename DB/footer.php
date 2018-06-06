@@ -44,6 +44,33 @@ width:20%;
 }
  
 
+#myBtn {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  height:25px;
+  width:25px;
+  cursor: pointer;
+  background: URL('Foto/TopPage.png') no-repeat;
+  background-size: 25px,25px;
+  bottom: 5%;
+  right: 2%;
+  transform: scale(2,2);
+}
+#myBtn:hover{
+  opacity:0.8;
+}
+
+/*Div element per homeButton*/
+#homeButton
+{
+position: fixed;
+  bottom: 3%;
+  left: 1%;
+}
+#homeButton:hover{
+  opacity:0.8;
+}
 
 
 </style>
