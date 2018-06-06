@@ -9,14 +9,14 @@ $a[] = "mimozaajeti@impulse.com";
 
 
 // get the q parameter from URL
-$q = $_REQUEST["q"];
+$q = $_REQUEST["q"]; //$_REQUEST is used to collect data after submitting an HTML form.
 
 $hint = "";
 
 // lookup all hints from array if $q is different from "" 
 if ($q !== "") {
     $q = strtolower($q);
-    $len=strlen($q);
+    $len=strlen($q); //strlen() is a built-in function in PHP which returns the length of a given string.
     foreach($a as $name) {
         if (stristr($q, substr($name, 0, $len))) {  /*this if condition to look for string $q's first occurence in string $name*/
             if ($hint === "") { /*this if condition is for when the foreach loop executes for the first time, there is no value in $hint, to assign that value we execute this if condition*/

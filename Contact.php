@@ -31,11 +31,20 @@ function showHint(str) {
     } else {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
+            /*XMLHttpRequest.onreadystatechange property contains the event handler to be called when the readystatechange event is fired*/
             if (this.readyState == 4 && this.status == 200) {
+                /*4-request finished and response is ready
+                200-OK*/
                 document.getElementById("txtHint").innerHTML = this.responseText;
+                //responseText-get the response data as a string
             }
         };
         xmlhttp.open("GET", "gethint.php?q=" + str, true);
+        /*We are using ajax and xmlhttp.open is a method of XMLHttpRequest object.
+GET is the request method.
+gethint.php is the file on which you are sending request.
+q is the parameter and its value is the value of variable str. You are passing data to gethint.php. You can receive value of q on gethint.php using $_GET['q'].
+3rd parameter is true, It is for async. If it is true, code after that request will be executed, If it is false, the code after that request will not execute until the request completed.*/
         xmlhttp.send();
     }
 }
