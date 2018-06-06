@@ -31,7 +31,10 @@ function showHint(str) {
     } else {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
+            /*XMLHttpRequest.onreadystatechange property contains the event handler to be called when the readystatechange event is fired*/
             if (this.readyState == 4 && this.status == 200) {
+                /*4-request finished and response is ready
+                200-OK*/
                 document.getElementById("txtHint").innerHTML = this.responseText;
             }
         };
