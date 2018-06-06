@@ -327,9 +327,7 @@ Rival voucher is the perfect gift to your friend, colluege or lover</P>
               echo "Invalid Email: " . $email;
               }}
               ?>
-                          <p id="paragrafetanash">  tobias.wikberg@rival.se  </p>
-
-                         <p id="paragrafetanash">  +46 (0)8-545 789 17 </p>
+                        
             
              </aside>  
             
