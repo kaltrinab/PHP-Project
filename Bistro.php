@@ -313,7 +313,7 @@ Rival voucher is the perfect gift to your friend, colluege or lover</P>
               function get_valid_email( $email )
                {
               $regex = '/^([*+!.&#$¦\'\\%\/0-9a-z^_`{}=?~:-]+)@(([0-9a-z-]+\.)+[0-9a-z]{2,4})$/i';
-                return preg_match($regex, trim($email), $matches);
+                return preg_match($regex, trim($email));
               }
               $emails= array ('tobias.wikberg@rival.se');
               foreach( $emails as $email ) {
