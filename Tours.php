@@ -6,93 +6,13 @@
 <!--logo ne tab -->
 <link rel="icon" sizes="192x192" href="Foto/01.png">
 <title>IMPULSE</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="jquery-1.11.2.min.js"></script>
-<script>
-     $(document).ready(function () {
-         $("#buton123").click(function () {
-             $("#fading").fadeToggle(1000, "linear");
-         });
-     });  
-     $(document).ready(function () {
-         $("#buton123").animate({
-             height: "250px",
-         }, 30000, function () {
-             $("#ld").text("Click on ocean");
-         });
-     });
-</script>
 
 <style>
        
 * {
    font-family: 'Trebuchet ms';
  }
-nav ul li form input[type = text] {
-     padding-left: 0;
-     opacity: 0.8;
-}
 
-nav ul li form input[type = text]:focus {
-     padding-left: 0;
-     opacity: 1;
-     }
-mark {
-     background-color: lightblue;
-     color: Black;
- } 
-     
-#div1, #div2 {
-     transform: translate(-5%,-30%);
-     float: left;
-     background-color: rgb(67, 178, 223);
-     width: 100px;
-     height: 7.5em;
-     margin: 10px;
-     padding: 0px;
-     border: 1px solid black;
-     float: left;
-     margin-top: 3%;
- }
-#myBtn {
-     display: none;
-     position: fixed;
-     z-index: 99;
-     height: 25px;
-     width: 25px;
-     cursor: pointer;
-     background: URL('Foto/TopPage.png') no-repeat;
-     background-size: 25px,25px;
-     bottom: 5%;
-     right: 2%;
-     transform: scale(2,2);
- }        
-#myBtn:hover {
-         opacity: 0.8;
-}
-/*Div element per homeButton*/
-#homeButton {
-     position: fixed;
-     bottom: 3%;
-     left: 1%;
-     z-index: 2;
-}
-#homeButton:hover {
-         opacity: 0.8;
-}
-mark {
-     background-color: lightblue;
-     color: Black;
-}
-#buton123 {
-     width: 100%;
-     background: url("Foto/giphy4.gif") 70% 40% no-repeat;
-     border: none;
-     background-size: 100%;
-     border-radius: 2px;
-     cursor: pointer;
-     outline: none;
- }
 
 /*fotoja se bashku me tekstin e pare */
 .perp{
@@ -136,6 +56,23 @@ font-family: 'Times New Roman', Times, serif;
   
 }
 
+#tabela td, table th 
+{
+    border: 1px solid  #088A4B;;
+    padding: 8px;
+    border-collapse: collapse;
+}
+
+#tabela tr:nth-child(even){background-color: #f2f2f2;}
+#tabela tr:hover {background-color: #ddd;}
+#tabela th {
+
+    text-align: left;
+    opacity: 0.9;
+    background-color: #088A4B;
+    color: white;
+}
+
 </style>
 </head>
 <body>
@@ -148,7 +85,7 @@ font-family: 'Times New Roman', Times, serif;
         </div>
         <div id="teksti">
         <h2 style="margin-bottom:01%">Mount Rigi</h2>
-        <p> Lake Lucerne is surrounded by mountains, but few are more spectacular than <b><u>Mount Rigi</u></b>. The “queen of the mountains.” Is known as a massif because it was formed when the earth’s crust moved. Visitors give it high marks for its stunning beauty, but warn to only visit it on a clear day. Mount Rigi is unique because it sits on three lakes: Lucerne, Zug and Lauerz. A cogwheel train is a popular way to reach the top of this <?php $number = 1797.5; printf("With 2 decimals: %1\$.2f ",$number);
+        <p> Lake Lucerne is surrounded by mountains, but few are more spectacular than <b><u>Mount Rigi</u></b>. The “queen of the mountains.” Is known as a massif because it was formed when the earth’s crust moved. Visitors give it high marks for its stunning beauty, but warn to only visit it on a clear day. Mount Rigi is unique because it sits on three lakes: Lucerne, Zug and Lauerz. A cogwheel train is a popular way to reach the top of this <?php $number = 1797.5; printf(" %1\$.2f ",$number);
 ?>meter high peak. Mount Rigi offers hiking in the summer and snow sports in the winter.
         </p>
         </div>
