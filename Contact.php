@@ -36,15 +36,15 @@ function showHint(str) {
                 /*4-request finished and response is ready
                 200-OK*/
                 document.getElementById("txtHint").innerHTML = this.responseText;
-                //responseText-get the response data as a string
+                //responseText-merr pergjigjien si string
             }
         };
         xmlhttp.open("GET", "gethint.php?q=" + str, true);
         /*We are using ajax and xmlhttp.open is a method of XMLHttpRequest object.
 GET is the request method.
-gethint.php is the file on which you are sending request.
-q is the parameter and its value is the value of variable str. You are passing data to gethint.php. You can receive value of q on gethint.php using $_GET['q'].
-3rd parameter is true, It is for async. If it is true, code after that request will be executed, If it is false, the code after that request will not execute until the request completed.*/
+gethint.php  file -i ne te cilin dergojme kerkesen.
+q paramer vlera e te cilit eshte vlera e variables str. e marrim vleren e q ne gethint.php duke perdorur $_GET['q'].
+3 parameter eshte true, kodi pas request do te ekzekutohet, */
         xmlhttp.send();
     }
 }
