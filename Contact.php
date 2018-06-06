@@ -598,18 +598,52 @@ class Person {
             <div class="tipsid1">
             <br><br>
 
-            
+             <?php
+                            GLOBAL $emailErr;
+                            GLOBAL $email;
+                            GLOBAL $nameErr;
+                            GLOBAL $name;
+                            if (empty($_POST["name"])) {
+                                $nameErr = "Username is required";
+                              } else {
+                                $name = test_input($_POST["name"]);
+                                // check if name only contains letters and whitespace
+                                if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+                                  $nameErr = "Only letters and white space allowed"; 
+                                }
+                              }
+                if (empty($_POST["email"])) {
+                    $emailErr = "Email is required";
+                } else {
+                    $email = test_input($_POST["email"]);
+                    // check if e-mail address is well-formed
+                    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                    $emailErr = "Invalid email format"; 
+                    }
+                }
 
-               <form method="post" action="">
-                   <input type="text" name="name" required="required" autocomplete="off" maxlength="30" placeholder="Name" style="height:2em;font-size:15px;border-style:none; border-radius:10px ;width:22%;border: 2px solid #18121e; margin-left:3%;padding-left:4%;" >
-                   <br></br>
+
+                function test_input($data) {
+                $data = trim($data);
+                $data = stripslashes($data);
+                $data = htmlspecialchars($data);
+                return $data;
+                }
+                ?>
+
+               <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                   <input type="text" name="name" autocomplete="off" maxlength="30" placeholder="Name" style="height:2em;font-size:15px;border-style:none; border-radius:10px ;width:22%;border: 2px solid #18121e; margin-left:3%;padding-left:4%;" >
+                   <br></br>          <?php echo $nameErr;?><br/>
                	   <input type="text" name="surname" autocomplete="off"  placeholder="Surname"  style=" height:2em;font-size:15px;width:22%;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
               	   <div style="float:right;margin-right:10%;width:50%;height:30%;">
                		<img  src="Foto/impulse_LOGO.png" style="height:100%;width:100%;">
                    </div>
-                   </br></br>
-                    <input type="email"    name="email" autocomplete="on" placeholder="Email"  style=" height:2em;width:22%;font-size:15px;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
+                   </br>
+                    <input     name="email"  placeholder="Email"  style=" height:2em;width:22%;font-size:15px;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;"><br/><br/>           <?PHP echo $emailErr; ?><br/>
+
+                    
                     </br></br>
+
                    <input type="password" name="password"  required="required" placeholder="Password" style=" height:2em;font-size:15px;width:22%;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
                </br></br>
                     
@@ -624,7 +658,7 @@ class Person {
                      <input type="radio" name="gender" value="Female"  style="margin-left:3%;width: 20px;height: 20px;"> Female</br>
                <br>
          </br><br>
-         <input type="submit" value="Sign up" name="Submit" formmethod="post" formtarget="_blank"  style=" border-type:outset; margin-left:5%;margin-bottom:5%; width:20%;border-radius:3px;outline:none; height:40px;box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75)">
+         <input type="submit" value="Sign up" name="Submit" formmethod="post"  style=" border-type:outset; margin-left:5%;margin-bottom:5%; width:20%;border-radius:3px;outline:none; height:40px;box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75)">
           <input type="reset" value="Reset" name="Reset"    style=" border-type:outset; margin-left:5%;margin-bottom:5%; width:20%;border-radius:3px;outline:none;height:40px;box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75)">
                  <br>
              </form>
