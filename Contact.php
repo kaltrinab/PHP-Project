@@ -609,18 +609,14 @@ class Person {
                    </div>
                    </br></br>
                     <input type="email"    name="email" autocomplete="on" placeholder="Email"  style=" height:2em;width:22%;font-size:15px;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
+                    </br></br>
                    <input type="password" name="password"  required="required" placeholder="Password" style=" height:2em;font-size:15px;width:22%;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
                </br></br>
                     
                 <br/><br />
                 <input type="file" name="img"  value="Choose Photo" multiple style="margin-left:3%;">
                 <br></br>
-                 <select name="select" class="select-field" style="height:2em;font-size:15px;outline:none;text-indent:1%;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;">
-                             <option value="Country">Country</option>
-                             <option value="Kosovo">Kosovo</option>
-                           
-                            
-                </select>
+               
                 <br><br>
                 <label style="margin-left:3%;">Gender:</label>
                </br>
