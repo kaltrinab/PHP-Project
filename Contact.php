@@ -571,7 +571,9 @@ class Person {
             $email=$_POST['email'];
             $password=$_POST['password'];
                     if($email=="impulse@impulse.com"&& $password=="1234567812345678"){
+                        $_SESSION['var']='hello';
                         $_SESSION['var']=$email;
+                      
                         echo '<script>window.open("index.php","_self");</sript>';
                     }
 
@@ -589,7 +591,51 @@ class Person {
 </div>
     </div>
 </div>
+<div style="width:100%;min-width:84em;">
+    <pre class="clicktips1"  style="margin-top:-36px;border-radius:5px;height:40px;text-align:center;cursor:pointer;">
    
+            <b>No account? Sign up</b></pre>
+            <div class="tipsid1">
+            <br><br>
+
+            
+
+               <form method="post" action="">
+                   <input type="text" name="name" required="required" autocomplete="off" maxlength="30" placeholder="Name" style="height:2em;font-size:15px;border-style:none; border-radius:10px ;width:22%;border: 2px solid #18121e; margin-left:3%;padding-left:4%;" >
+                   <br></br>
+               	   <input type="text" name="surname" autocomplete="off"  placeholder="Surname"  style=" height:2em;font-size:15px;width:22%;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
+              	   <div style="float:right;margin-right:10%;width:50%;height:30%;">
+               		<img  src="Foto/impulse_LOGO.png" style="height:100%;width:100%;">
+                   </div>
+                   </br></br>
+                    <input type="email"    name="email" autocomplete="on" placeholder="Email"  style=" height:2em;width:22%;font-size:15px;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
+                   <input type="password" name="password"  required="required" placeholder="Password" style=" height:2em;font-size:15px;width:22%;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;padding-left:4%;">
+               </br></br>
+                    
+                <br/><br />
+                <input type="file" name="img"  value="Choose Photo" multiple style="margin-left:3%;">
+                <br></br>
+                 <select name="select" class="select-field" style="height:2em;font-size:15px;outline:none;text-indent:1%;border-style:none;border-radius:10px ;border: 2px solid #18121e; margin-left:3%;">
+                             <option value="Country">Country</option>
+                             <option value="Kosovo">Kosovo</option>
+                           
+                            
+                </select>
+                <br><br>
+                <label style="margin-left:3%;">Gender:</label>
+               </br>
+                     <input type="radio" name="gender" value="Male" style="margin-left:3%; width: 20px;height: 20px;"> Male<br>
+                     <input type="radio" name="gender" value="Female"  style="margin-left:3%;width: 20px;height: 20px;"> Female</br>
+               <br>
+         </br><br>
+         <input type="submit" value="Sign up" name="Submit" formmethod="post" formtarget="_blank"  style=" border-type:outset; margin-left:5%;margin-bottom:5%; width:20%;border-radius:3px;outline:none; height:40px;box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75)">
+          <input type="reset" value="Reset" name="Reset"    style=" border-type:outset; margin-left:5%;margin-bottom:5%; width:20%;border-radius:3px;outline:none;height:40px;box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75)">
+                 <br>
+             </form>
+               
+            </div>
+            <br><br>
+        </div>
     
         <div style="width:100%;min-width:84em;">
     <pre class="clickEmail1"  style="margin-top:-20px;border-radius:5px;height:50px;text-align:center;cursor:pointer;margin-bottom:25px;">
