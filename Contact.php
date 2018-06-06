@@ -50,12 +50,7 @@ function showHint(str) {
     opacity: 0.9;
     background-color: #2E9AFE;
 }
-.forma {
-	color: #0A68E4;
-	display: flex;
-	height: 1.2em;
-    margin-left: 14%;
-}
+
 input[type=radio] {
     width: 2em;
     font-size: 1em;
@@ -156,13 +151,6 @@ textarea {
 textarea:focus {
                 opacity: 1;
 }
-
-.a1 {
-    cursor: pointer;
-}
-.b {
-    cursor: auto;
-}
 nav ul li form input[type = text] {
     background-image: none;
     padding-left: 0;
@@ -170,14 +158,6 @@ nav ul li form input[type = text] {
 nav ul li form input[type = text]:focus {
     background-image: none;
     padding-left: 0;
-}
-
-.user{           
-    border: 1px solid black;
-    padding: 5px;
-    width: 300px;
-    outline: 1px solid lightblue;
-    outline-offset: 5px;
 }
 .forma1 {
     color: #0A68E4;
@@ -232,22 +212,7 @@ label
     width: 100px;
     display: inline-block;
 }
-#frmBooking{
-    min-width:500px;
-}
-#transparente{
-    padding: 26px;
-        
-    background-color: rgba(0,0,0,.70);
-    border: 1px solid white;
-    border-radius: .6em;
-    min-width: 500px;
-    color: white;  
-    margin-bottom: 16%;
-    margin-top:16%;
 
-
-}
 input[type=text]
 {
     display: inline-block;
@@ -366,7 +331,6 @@ form {
 
 <script>
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("myBtn").style.display = "block";
