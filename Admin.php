@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head><title>Admin</title>
 
 <?php
 ob_start();
@@ -27,6 +24,9 @@ if(isset($_POST['submit']))
 
 
 ?>
+<!DOCTYPE html>
+<html>
+<head><title>Admin</title>
 
 <style type="text/css">
      * 
