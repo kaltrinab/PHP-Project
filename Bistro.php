@@ -129,21 +129,6 @@ nav ul li form input[type = text]:focus{
 
 }
 
-@keyframes test
-{
-0%   {background-image:url("keyframe/v7.jfif");left:0px;top:0px;}
-20%  {background-image:url("keyframe/v11.jpg");left:0px;top:0px;}
-40%  {background-image:url("keyframe/v10.jpg");left:0px;top:0px;}
-60%  {background-image:url("keyframe/v9.jpg");left:0px;top:0px;}
-80%  {background-image:url("keyframe/v8.jpg");left:40px;top:40px;}
-100% {background-image:url("keyframe/v12.jpg");left:0px;top:0px;}
-}
-#test div:hover{
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-    border-radius: 10%;
-}
-
 
 
 
