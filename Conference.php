@@ -255,7 +255,13 @@ aside
                    <article class="outdoor">
                    <h1 style="text-align:center">What makes us unique </h1>
                      <p><br>
-                     Guests love the effortless and relaxed atmosphere we create.
+
+                     <?php
+                     define("TEKSI","Guests");
+                     echo TEKSI;
+
+                     ?>
+                     love the effortless and relaxed atmosphere we create.
                      Flawless symbiosis of thoughtful and clever hardware,
                      wrapped in a cool and appealing message, and a dedicated team who just love to inspire
                      our guests and represent our unique product
