@@ -18,8 +18,8 @@ if ($q !== "") {
     $q = strtolower($q);
     $len=strlen($q);
     foreach($a as $name) {
-        if (stristr($q, substr($name, 0, $len))) {
-            if ($hint === "") {
+        if (stristr($q, substr($name, 0, $len))) {  /*this if condition to look for string $q's first occurence in string $name*/
+            if ($hint === "") { /*this if condition is for when the foreach loop executes for the first time, there is no value in $hint, to assign that value we execute this if condition*/
                 $hint = $name;
             } else {
                 $hint .= ", $name";
