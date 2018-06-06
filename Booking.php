@@ -6,8 +6,6 @@
  <!--logo ne tab -->
 <link rel="icon" sizes="192x192" href="Foto/01.png">
  <title>IMPULSE</title>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script src="jquery-1.11.2.min.js">  </script>
     <style>
 
 
@@ -19,104 +17,33 @@
     height:100%;
         }
 .im2{
-      background:url('Fotot/img2.jpg');
-      background-repeat:no-repeat;
-      background-size:100% 100%;
-      width:100%;
-      height:100%;
+    background:url('Fotot/img2.jpg');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    width:100%;
+    height:100%;
     }
 .im3{
-  background:url('Fotot/img3.jpg');
-  background-repeat:no-repeat;
-  background-size:100% 100%;
-  width:100%;
-  height:100%;
-    }
-.im4{
-  background:url('Fotot/img4.jpg');
-  background-repeat:no-repeat;
-  background-size:100% 100%;
-  width:100%;
-  height:100%;
+   background:url('Fotot/img3.jpg');
+   background-repeat:no-repeat;
+   background-size:100% 100%;
+   width:100%;
+   height:100%;
     }
 
+* {
+    font-family: 'Trebuchet ms'
+}
 
-        * {
-            font-family: 'Trebuchet ms'
-        }
+nav ul li form input[type = text] {
+    padding-left: 0;
+    opacity: 0.8;
+}
+nav ul li form input[type = text]:focus {
+    padding-left: 0;
+    opacity: 1;
+}
 
-        nav ul li form input[type = text] {
-            padding-left: 0;
-            opacity: 0.8;
-        }
-
-            nav ul li form input[type = text]:focus {
-                padding-left: 0;
-                opacity: 1;
-            }
-
-        mark {
-            background-color: lightblue;
-            color: Black;
-        }
-
-        #div1, #div2 {
-            transform: translate(-5%,-30%);
-            float: left;
-            background-color: rgb(67, 178, 223);
-            width: 100px;
-            height: 7.5em;
-            margin: 10px;
-            padding: 0px;
-            border: 1px solid black;
-            float: left;
-            margin-top: 3%;
-        }
-
-        #myBtn {
-            display: none;
-            position: fixed;
-            z-index: 99;
-            height: 25px;
-            width: 25px;
-            cursor: pointer;
-            background: URL('Foto/TopPage.png') no-repeat;
-            background-size: 25px,25px;
-            bottom: 5%;
-            right: 2%;
-            transform: scale(2,2);
-        }
-
-            #myBtn:hover {
-                opacity: 0.8;
-            }
-
-        /*Div element per homeButton*/
-        #homeButton {
-            position: fixed;
-            bottom: 3%;
-            left: 1%;
-            z-index: 2;
-        }
-
-            #homeButton:hover {
-                opacity: 0.8;
-            }
-
-        mark {
-            background-color: lightblue;
-            color: Black;
-        }
-
-        #buton123 {
-            width: 100%;
-            background: url("Foto/giphy4.gif") 70% 40% no-repeat;
-            border: none;
-            background-size: 100%;
-            border-radius: 2px;
-            cursor: pointer;
-            outline: none;
-        }
     </style>
 
 
@@ -157,7 +84,7 @@
     <br><br>
     <label>Username:</label>
    <!-- Cfaredo username qe permban vetem shkronja dhe te pakten 3-->
-    <input  name="name"  autofocus="" placeholder="Username"   value="<?php echo $name;?>">
+    <input  name="name"  autofocus="" placeholder="Username">
     <span class="error">* </span><br><br>
     <label>First Name:</label>
     <input type="text" name="firstname" required="" placeholder="First Name">
