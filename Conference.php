@@ -6,34 +6,6 @@
  <!--logo ne tab -->
 <link rel="icon" sizes="192x192" href="Foto/01.png">
 <title>IMPULSE</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="jquery-1.11.2.min.js"></script>
-	<script>
-$(document).ready(function(){
-   $(".hh3").append('<span>Conference?</span>').css("color","#0B0B61");
-});
-							 
-
-$(document).ready(function(){
-    $(".blur").hover(function(){
-        $(".blur").css("color","#A9E2F3");
-    },
-    function(){
-        $(".blur").css("color","black");
-    });
-	 $(".blur").dblclick(function(){
-        $(".blur").css("color","#04B4AE");
-    });
-	
-});
-</script>
-<script>
-$(document).ready(function(){
-    $(".clicktips").click(function(){
-        $(".tipsid").slideToggle("slow");
-    });
-});
-</script>
 </head>
 
 <style>
@@ -99,24 +71,6 @@ nav ul li form input[type = text]:focus
    padding-left: 0;
    opacity: 1;
 }
-.tipsid, .clicktips 
-{
-   background-color: rgb(14, 150, 145);
-   border: none;
-   height:10%;
-   width:95%;
-   margin-left:2%;
-}
-
-.tipsid 
-{
-   margin-left:2%;
-   display: none;
-   border-radius:1%;
-   width:95%;
-   margin-top:-3.8%;
-}
- 
 .outdoor
 {
   padding: 24px;
