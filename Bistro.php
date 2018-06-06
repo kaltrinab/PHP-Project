@@ -1,15 +1,12 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-
 <head>
- <meta charset="utf-8" />
+<meta charset="utf-8" />
  <!--logo ne tab -->
 <link rel="icon" sizes="192x192" href="Foto/01.png">
- <title>IMPULSE</title>
+<title>IMPULSE</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="jquery-1.11.2.min.js"></script>
-
 <script>
 $(document).ready(function(){
     $(".clicktips").click(function(){
@@ -31,33 +28,6 @@ $(document).ready(function(){
 <style>
 
 
-#myBtn {
-  display: none;
-  position: fixed;
-  z-index: 99;
-  height:25px;
-  width:25px;
-  cursor: pointer;
-  background: URL('Foto/TopPage.png') no-repeat;
-  background-size: 25px,25px;
-  bottom: 5%;
-  right: 2%;
-  transform: scale(2,2);
-}
-#myBtn:hover{
-  opacity:0.8;
-}
-
-/*Div element per homeButton*/
-#homeButton
-{
-position: fixed;
-  bottom: 3%;
-  left: 1%;
-}
-#homeButton:hover{
-  opacity:0.8;
-}
 
 *{
 font-family:'Trebuchet ms'
@@ -101,40 +71,23 @@ nav ul li form input[type = text]:focus{
   
 }
 .tipsid1 {
-  background:url(images/dinne.jpg);
+    background:url(images/dinne.jpg);
     margin-left:2%;
     display: none;
     border-radius:1%;
     width:95%;
-  margin-top:-3.8%;
+    margin-top:-3.8%;
 }
 .tipsid2 {
-  background:url(images/cake.jpg);
+    background:url(images/cake.jpg);
     margin-left:2%;
     display: none;
     border-radius:1%;
     width:95%;
-  margin-top:-3.8%;
+    margin-top:-3.8%;
 }
-#test div
-{
-  position:relative;
-  width:400px;
-  height:350px;
-  text-align:center;
-  transform:translateX(100%);
-  animation: test 10s ease-out infinite;
-  float:left;
-  margin-left:-30%;
-
-}
-
-
-
 
 /* style brenda body */
-
-
 #article{
  max-width:  100%;
  
@@ -148,15 +101,10 @@ nav ul li form input[type = text]:focus{
  padding: 5%;
  margin-left:15%;
  margin-right: 0%;
-
-color:white;
-font:tahoma;
+ color:white;
+ font:tahoma;
  border-radius: 15px;
-
  background-color:rgba(200,180,192,0.4);
-
-
-
 }
 #second-section
 { 
@@ -212,20 +160,24 @@ margin-top: 20%;
 {
   margin: 10%;
 }
+.outdoor{
+  max-width: 390px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid white;
+  border-radius: .5em;
+}
 
 </style>
 <script>
 // Kur scroll posht 135 px vendose butonin TOP
 window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
+    function scrollFunction() {
     if (document.body.scrollTop > 135 || document.documentElement.scrollTop > 135) {
         document.getElementById("myBtn").style.display = "block";
     } else {
         document.getElementById("myBtn").style.display = "none";
     }
 }
-
 // Kur klikon butonin dergo ne top
 function topFunction() {
     document.body.scrollTop = 0;
@@ -235,7 +187,6 @@ function topFunction() {
 </head>
 
 <body style="background-color:#ececec;">
-
 
 <div class="header">
 <?php include 'DB\header.php';?>
@@ -252,8 +203,7 @@ function topFunction() {
             <section id="second-section">
           <h2> Bistro decor</h2>
           <p id="paragrafet ">
-
-            Banquettes, a lot of red velvet, soft lighting from Spanish-designed lamps. The original silver columns from 1937 have been restored and our guests love the warm interior.
+           Banquettes, a lot of red velvet, soft lighting from Spanish-designed lamps. The original silver columns from 1937 have been restored and our guests love the warm interior.
           </p>
           <img src="images/bistro1.jpg" height="20px" width="100%" />
           <p id="paragrafet ">
@@ -270,7 +220,7 @@ function topFunction() {
               {
               $this->property= $value;
               }
-              }
+          }
           public function __get($property)
           {
           return "You will be " . $this->property . "% pleased.";
@@ -294,26 +244,24 @@ function topFunction() {
                </aside  > 
 
        </div>
-      
+      <!-- end: main-section-->
        <aside id="asideofarticle" > 
        
             <h4 align="center"> Book table </h4>
             <p id="paragrafetanash"> Book table in our online booking   system </p>
             <P id="paragrafetanash"> Give Rival as a gift<br/>
-Rival voucher is the perfect gift to your friend, colluege or lover</P>
-               <p id="paragrafetanash">
-                 Book</p>
-                 <p id="paragrafetanash"> bistro@rival.se</p>
-
-                        <p id="paragrafetanash">    Head waiter</p>
-                         <p id="paragrafetanash">   +46 (0)8-545 789 15</p>
-                          <p id="paragrafetanash">  +46 (0)8-545 789 45 </p>
-                            <p id="paragrafetanash"> Food & Beverage Manager</p>
+             Rival voucher is the perfect gift to your friend, colluege or lover</P>
+            <p id="paragrafetanash">Book</p>
+            <p id="paragrafetanash"> bistro@rival.se</p>
+            <p id="paragrafetanash">    Head waiter</p>
+            <p id="paragrafetanash">   +46 (0)8-545 789 15</p>
+            <p id="paragrafetanash">  +46 (0)8-545 789 45 </p>
+            <p id="paragrafetanash"> Food & Beverage Manager</p>
  <?php
               function get_valid_email( $email )
                {
               $regex = '/^([*+!.&#$¦\'\\%\/0-9a-z^_`{}=?~:-]+)@(([0-9a-z-]+\.)+[0-9a-z]{2,4})$/i';
-                return preg_match($regex, trim($email));
+                return preg_match($regex, trim($email), $matches);
               }
               $emails= array ('tobias.wikberg@rival.se');
               foreach( $emails as $email ) {
@@ -338,24 +286,8 @@ Rival voucher is the perfect gift to your friend, colluege or lover</P>
     
 <div style="background-color:#ececec; width:100%;min-width:84em; float:left;margin-bottom: 10px; ">
        <div style="margin-left:12%; width:76%;min-width:48.8em; float:left;">
-        
- 
-
- 
-
-</p>
         <br />
-        
-        <style type="text/css">
-          
-    .outdoor{
-        max-width: 390px;
-        background-color: rgba(0, 0, 0, 0.7);
-        border: 1px solid white;
-        border-radius: .5em;
-        
-    }
-        </style>
+
 
 <pre class="clicktips"  style="border-radius:5px;height:50px;text-align:center;cursor:pointer;color: black;">
    
@@ -396,39 +328,39 @@ print_r (explode(",",$input2));
   <?php
 $names = "Taco De Pescado, Mussels  Frites, Crispy and Brussels Sprout Salad, Pizza , Smoked Brisket, Grande Salumi Formaggi Platter,Patatas Bravas, CHICKEN POT PIE,HOT TURKEY PLATE"; 
 $food = preg_split ("/[\s,]+/", $names); 
-print $food[0];
-print $food[1];
-print $food[2];
-echo "<br /><br />";
-print $food[3];
-print $food[4];
-echo " <br /><br />"  ;
-print $food[5];
-print $food[6];
-print $food[7];
-print $food[8];
-print $food[9];
-echo " <br /><br /> ";
-print $food[10];
-echo " <br /><br />";
-print $food[11];
-print $food[12];
-echo " <br /><br />";
-print $food[13];
-print $food[14];
-print $food[15];
-print $food[16];
-echo " <br /><br />";
-print $food[17];
-print $food[18];
-echo " <br /><br />" ;
-print $food[19];
-print $food[20];
-print $food[21];
-echo " <br /><br />"  ;
-print $food[22];
-print $food[23];
-print $food[24];
+      print $food[0];
+      print $food[1];
+      print $food[2];
+      echo "<br /><br />";
+      print $food[3];
+      print $food[4];
+      echo " <br /><br />"  ;
+      print $food[5];
+      print $food[6];
+      print $food[7];
+      print $food[8];
+      print $food[9];
+      echo " <br /><br /> ";
+      print $food[10];
+      echo " <br /><br />";
+      print $food[11];
+      print $food[12];
+      echo " <br /><br />";
+      print $food[13];
+      print $food[14];
+      print $food[15];
+      print $food[16];
+      echo " <br /><br />";
+      print $food[17];
+      print $food[18];
+      echo " <br /><br />" ;
+      print $food[19];
+      print $food[20];
+      print $food[21];
+      echo " <br /><br />"  ;
+      print $food[22];
+      print $food[23];
+      print $food[24];
 ?>
 
  </ul>
