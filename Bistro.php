@@ -401,7 +401,7 @@ unset($varguNormal[7]);
 $varguNormal=array_values($varguNormal);
 sort($varguNormal);
 $arrlen=count($varguNormal);
-$vrg=str_replace("Nutella Cake","Sacher Torte",$varguNormal,$i)
+$vrg=str_replace("Nutella Cake","Sacher Torte",$varguNormal)
 
 ?>
 

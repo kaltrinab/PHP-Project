@@ -9,9 +9,7 @@ require_once('db.php');
 
 if(isset($_POST['submit']))
 {
-    $username = mysqli_real_escape_string($con,strtolower($_POST['username']));
-    $password = mysqli_real_escape_string($con,$_POST['password']);
-    
+ 
     if($username == "impulse" && $password == "impulse123")
     {
         setcookie('username',$username, time()+60);
