@@ -9,7 +9,7 @@ $a[] = "mimozaajeti@impulse.com";
 
 
 // get the q parameter from URL
-$q = $_REQUEST["q"];
+$q = $_REQUEST["q"]; //$_REQUEST is used to collect data after submitting an HTML form.
 
 $hint = "";
 
